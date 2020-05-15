@@ -1,0 +1,451 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        25/Feb/2020  18:23:33
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stmflash.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stmflash.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM\mksRobin2/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM\..\Middlewares\GUI\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM\mksRobin2/List\stmflash.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\EWARM\mksRobin2/Obj\stmflash.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stmflash.c
+      1          #include "stmflash.h"
+      2          #include "stm32f10x_flash.h"
+
+  #define IS_FLASH_LATENCY(LATENCY) (((LATENCY) == FLASH_Latency_0) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",75  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_FLASH_LATENCY" (declared at
+          line 74 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h")
+
+  #define IS_OB_DATA_ADDRESS(ADDRESS) (((ADDRESS) == 0x1FFFF804) || ((ADDRESS) == 0x1FFFF806))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",219  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_OB_DATA_ADDRESS" (declared at
+          line 81 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+
+  #define IS_OB_STOP_SOURCE(SOURCE) (((SOURCE) == OB_STOP_NoRST) || ((SOURCE) == OB_STOP_RST))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",243  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_OB_STOP_SOURCE" (declared at
+          line 85 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+
+  #define IS_OB_STDBY_SOURCE(SOURCE) (((SOURCE) == OB_STDBY_NoRST) || ((SOURCE) == OB_STDBY_RST))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",255  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_OB_STDBY_SOURCE" (declared at
+          line 87 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+
+  #define FLASH_IT_EOP                   ((uint32_t)0x00001000)  /*!< End of FLASH Operation Interrupt source */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",289  Warning[Pe047]: 
+          incompatible redefinition of macro "FLASH_IT_EOP" (declared at line
+          575 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+
+  #define FLASH_FLAG_BSY                 ((uint32_t)0x00000001)  /*!< FLASH Busy flag */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",329  Warning[Pe047]: 
+          incompatible redefinition of macro "FLASH_FLAG_BSY" (declared at
+          line 548 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+
+  #define FLASH_FLAG_EOP                 ((uint32_t)0x00000020)  /*!< FLASH End of Operation flag */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",330  Warning[Pe047]: 
+          incompatible redefinition of macro "FLASH_FLAG_EOP" (declared at
+          line 551 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+
+  #define FLASH_FLAG_PGERR               ((uint32_t)0x00000004)  /*!< FLASH Program error flag */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_Nano_code\Src\stm32f10x_flash.h",331  Warning[Pe047]: 
+          incompatible redefinition of macro "FLASH_FLAG_PGERR" (declared at
+          line 549 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_嘉禾三维\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h")
+      3          //#include "delay.h"
+      4          //#include "usart.h"
+      5           
+      6          //////////////////////////////////////////////////////////////////////////////////	 
+      7          //STM32 FLASH 驱动代码	   
+      8          //All rights reserved									  
+      9          //////////////////////////////////////////////////////////////////////////////////
+     10           
+     11          //读取指定地址的半字(16位数据)
+     12          //faddr:读地址(此地址必须为2的倍数!!)
+     13          //返回值:对应数据.
+
+   \                                 In section .text, align 2, keep-with-next
+     14          u16 STMFLASH_ReadHalfWord(u32 faddr)
+     15          {
+     16          	return *(vu16*)faddr; 
+   \                     STMFLASH_ReadHalfWord: (+1)
+   \   00000000   0x8800             LDRH     R0,[R0, #+0]
+   \   00000002   0x4770             BX       LR               ;; return
+     17          }
+     18          #if STM32_FLASH_WREN	//如果使能了写   
+     19          //不检查的写入
+     20          //WriteAddr:起始地址
+     21          //pBuffer:数据指针
+     22          //NumToWrite:半字(16位)数   
+
+   \                                 In section .text, align 2, keep-with-next
+     23          void STMFLASH_Write_NoCheck(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite)   
+     24          { 			 		 
+   \                     STMFLASH_Write_NoCheck: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+     25          	u16 i;
+     26          	for(i=0;i<NumToWrite;i++)
+   \   00000008   0x2700             MOVS     R7,#+0
+   \   0000000A   0xE006             B.N      ??STMFLASH_Write_NoCheck_0
+     27          	{
+     28          		FLASH_ProgramHalfWord(WriteAddr,pBuffer[i]);
+   \                     ??STMFLASH_Write_NoCheck_1: (+1)
+   \   0000000C   0xF835 0x1017      LDRH     R1,[R5, R7, LSL #+1]
+   \   00000010   0x4620             MOV      R0,R4
+   \   00000012   0x.... 0x....      BL       FLASH_ProgramHalfWord
+     29          	    WriteAddr+=2;//地址增加2.
+   \   00000016   0x1CA4             ADDS     R4,R4,#+2
+     30          	}  
+   \   00000018   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??STMFLASH_Write_NoCheck_0: (+1)
+   \   0000001A   0xB2BF             UXTH     R7,R7
+   \   0000001C   0x42B7             CMP      R7,R6
+   \   0000001E   0xD3F5             BCC.N    ??STMFLASH_Write_NoCheck_1
+     31          } 
+   \   00000020   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+     32          //从指定地址开始写入指定长度的数据
+     33          //WriteAddr:起始地址(此地址必须为2的倍数!!)
+     34          //pBuffer:数据指针
+     35          //NumToWrite:半字(16位)数(就是要写入的16位数据的个数.)
+     36          #if STM32_FLASH_SIZE<256
+     37          #define STM_SECTOR_SIZE 1024 //字节
+     38          #else 
+     39          #define STM_SECTOR_SIZE	2048
+     40          #endif		 
+
+   \                                 In section .bss, align 4
+     41          u16 STMFLASH_BUF[STM_SECTOR_SIZE/2];//最多是2K字节
+   \                     STMFLASH_BUF:
+   \   00000000                      DS8 2048
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void STMFLASH_Write(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite)	
+     43          {
+   \                     STMFLASH_Write: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0x4616             MOV      R6,R2
+     44          	u32 secpos;	   //扇区地址
+     45          	u16 secoff;	   //扇区内偏移地址(16位字计算)
+     46          	u16 secremain; //扇区内剩余地址(16位字计算)	   
+     47           	u16 i;    
+     48          	u32 offaddr;   //去掉0X08000000后的地址
+     49          	if(WriteAddr<STM32_FLASH_BASE||(WriteAddr>=(STM32_FLASH_BASE+1024*STM32_FLASH_SIZE)))return;//非法地址
+   \   0000000A   0xF1A4 0x6800      SUB      R8,R4,#+134217728
+   \   0000000E   0xF5B8 0x2F00      CMP      R8,#+524288
+   \   00000012   0xD301             BCC.N    ??STMFLASH_Write_0
+   \   00000014   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}   ;; return
+     50          	FLASH_Unlock();						//解锁
+   \                     ??STMFLASH_Write_0: (+1)
+   \   00000018   0x.... 0x....      BL       FLASH_Unlock
+     51          	offaddr=WriteAddr-STM32_FLASH_BASE;		//实际偏移地址.
+     52          	secpos=offaddr/STM_SECTOR_SIZE;			//扇区地址  0~127 for STM32F103RBT6
+   \   0000001C   0xEA4F 0x27D8      LSR      R7,R8,#+11
+     53          	secoff=(offaddr%STM_SECTOR_SIZE)/2;		//在扇区内的偏移(2个字节为基本单位.)
+   \   00000020   0xF3C8 0x0849      UBFX     R8,R8,#+1,#+10
+     54          	secremain=STM_SECTOR_SIZE/2-secoff;		//扇区剩余空间大小   
+   \   00000024   0xF5C8 0x6980      RSB      R9,R8,#+1024
+   \   00000028   0xFA1F 0xF989      UXTH     R9,R9
+     55          	if(NumToWrite<=secremain)secremain=NumToWrite;//不大于该扇区范围
+   \   0000002C   0x45B1             CMP      R9,R6
+   \   0000002E   0xDB03             BLT.N    ??STMFLASH_Write_1
+   \   00000030   0x46B1             MOV      R9,R6
+   \   00000032   0xE001             B.N      ??STMFLASH_Write_1
+     56          	while(1) 
+     57          	{	
+     58          		STMFLASH_Read(secpos*STM_SECTOR_SIZE+STM32_FLASH_BASE,STMFLASH_BUF,STM_SECTOR_SIZE/2);//读出整个扇区的内容
+     59          		for(i=0;i<secremain;i++)//校验数据
+     60          		{
+     61          			if(STMFLASH_BUF[secoff+i]!=0XFFFF)break;//需要擦除  	  
+     62          		}
+     63          		if(i<secremain)//需要擦除
+     64          		{
+     65          			FLASH_ErasePage(secpos*STM_SECTOR_SIZE+STM32_FLASH_BASE);//擦除这个扇区
+     66          			for(i=0;i<secremain;i++)//复制
+     67          			{
+     68          				STMFLASH_BUF[i+secoff]=pBuffer[i];	  
+     69          			}
+     70          			STMFLASH_Write_NoCheck(secpos*STM_SECTOR_SIZE+STM32_FLASH_BASE,STMFLASH_BUF,STM_SECTOR_SIZE/2);//写入整个扇区  
+     71          		}else STMFLASH_Write_NoCheck(WriteAddr,pBuffer,secremain);//写已经擦除了的,直接写入扇区剩余区间. 				   
+     72          		if(NumToWrite==secremain)break;//写入结束了
+     73          		else//写入未结束
+     74          		{
+     75          			secpos++;				//扇区地址增1
+     76          			secoff=0;				//偏移位置为0 	 
+     77          		   	pBuffer+=secremain;  	//指针偏移
+     78          			WriteAddr+=secremain;	//写地址偏移	   
+     79          		   	NumToWrite-=secremain;	//字节(16位)数递减
+     80          			if(NumToWrite>(STM_SECTOR_SIZE/2))secremain=STM_SECTOR_SIZE/2;//下一个扇区还是写不完
+   \                     ??STMFLASH_Write_2: (+1)
+   \   00000034   0xF44F 0x6980      MOV      R9,#+1024
+   \                     ??STMFLASH_Write_1: (+1)
+   \   00000038   0x02F8             LSLS     R0,R7,#+11
+   \   0000003A   0xF100 0x6A00      ADD      R10,R0,#+134217728
+   \   0000003E   0x.... 0x....      LDR.W    R11,??DataTable0
+   \   00000042   0xF44F 0x6280      MOV      R2,#+1024
+   \   00000046   0x4659             MOV      R1,R11
+   \   00000048   0x4650             MOV      R0,R10
+   \   0000004A   0x.... 0x....      BL       STMFLASH_Read
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \   00000050   0xF64F 0x72FF      MOVW     R2,#+65535
+   \   00000054   0xE001             B.N      ??STMFLASH_Write_3
+   \                     ??STMFLASH_Write_4: (+1)
+   \   00000056   0x1C40             ADDS     R0,R0,#+1
+   \   00000058   0xB280             UXTH     R0,R0
+   \                     ??STMFLASH_Write_3: (+1)
+   \   0000005A   0x4548             CMP      R0,R9
+   \   0000005C   0xDA05             BGE.N    ??STMFLASH_Write_5
+   \   0000005E   0xEB00 0x0108      ADD      R1,R0,R8
+   \   00000062   0xF83B 0x1011      LDRH     R1,[R11, R1, LSL #+1]
+   \   00000066   0x4291             CMP      R1,R2
+   \   00000068   0xD0F5             BEQ.N    ??STMFLASH_Write_4
+   \                     ??STMFLASH_Write_5: (+1)
+   \   0000006A   0x4548             CMP      R0,R9
+   \   0000006C   0xDA15             BGE.N    ??STMFLASH_Write_6
+   \   0000006E   0x4650             MOV      R0,R10
+   \   00000070   0x.... 0x....      BL       FLASH_ErasePage
+   \   00000074   0x2000             MOVS     R0,#+0
+   \   00000076   0xE007             B.N      ??STMFLASH_Write_7
+   \                     ??STMFLASH_Write_8: (+1)
+   \   00000078   0xF835 0x1010      LDRH     R1,[R5, R0, LSL #+1]
+   \   0000007C   0xEB08 0x0200      ADD      R2,R8,R0
+   \   00000080   0xF82B 0x1012      STRH     R1,[R11, R2, LSL #+1]
+   \   00000084   0x1C40             ADDS     R0,R0,#+1
+   \   00000086   0xB280             UXTH     R0,R0
+   \                     ??STMFLASH_Write_7: (+1)
+   \   00000088   0x4548             CMP      R0,R9
+   \   0000008A   0xDBF5             BLT.N    ??STMFLASH_Write_8
+   \   0000008C   0xF44F 0x6280      MOV      R2,#+1024
+   \   00000090   0x4659             MOV      R1,R11
+   \   00000092   0x4650             MOV      R0,R10
+   \   00000094   0x.... 0x....      BL       STMFLASH_Write_NoCheck
+   \   00000098   0xE004             B.N      ??STMFLASH_Write_9
+   \                     ??STMFLASH_Write_6: (+1)
+   \   0000009A   0x464A             MOV      R2,R9
+   \   0000009C   0x4629             MOV      R1,R5
+   \   0000009E   0x4620             MOV      R0,R4
+   \   000000A0   0x.... 0x....      BL       STMFLASH_Write_NoCheck
+   \                     ??STMFLASH_Write_9: (+1)
+   \   000000A4   0x454E             CMP      R6,R9
+   \   000000A6   0xD103             BNE.N    ??STMFLASH_Write_10
+     81          			else secremain=NumToWrite;//下一个扇区可以写完了
+     82          		}	 
+     83          	};	
+     84          	FLASH_Lock();//上锁
+   \   000000A8   0xE8BD 0x4FF1      POP      {R0,R4-R11,LR}
+   \   000000AC   0x.... 0x....      B.W      FLASH_Lock
+   \                     ??STMFLASH_Write_10: (+1)
+   \   000000B0   0x1C7F             ADDS     R7,R7,#+1
+   \   000000B2   0xF04F 0x0800      MOV      R8,#+0
+   \   000000B6   0xEB05 0x0549      ADD      R5,R5,R9, LSL #+1
+   \   000000BA   0x444C             ADD      R4,R9,R4
+   \   000000BC   0xEBA6 0x0609      SUB      R6,R6,R9
+   \   000000C0   0xB2B6             UXTH     R6,R6
+   \   000000C2   0xF5B6 0x6F80      CMP      R6,#+1024
+   \   000000C6   0xDCB5             BGT.N    ??STMFLASH_Write_2
+   \   000000C8   0x46B1             MOV      R9,R6
+   \   000000CA   0xE7B5             B.N      ??STMFLASH_Write_1
+     85          }
+     86          #endif
+     87          
+     88          //从指定地址开始读出指定长度的数据
+     89          //ReadAddr:起始地址
+     90          //pBuffer:数据指针
+     91          //NumToWrite:半字(16位)数
+
+   \                                 In section .text, align 2, keep-with-next
+     92          void STMFLASH_Read(u32 ReadAddr,u16 *pBuffer,u16 NumToRead)   	
+     93          {
+   \                     STMFLASH_Read: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+     94          	u16 i;
+     95          	for(i=0;i<NumToRead;i++)
+   \   00000008   0x2700             MOVS     R7,#+0
+   \   0000000A   0xE006             B.N      ??STMFLASH_Read_0
+     96          	{
+     97          		pBuffer[i]=STMFLASH_ReadHalfWord(ReadAddr);//读取2个字节.
+   \                     ??STMFLASH_Read_1: (+1)
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0x.... 0x....      BL       STMFLASH_ReadHalfWord
+   \   00000012   0xF825 0x0017      STRH     R0,[R5, R7, LSL #+1]
+     98          		ReadAddr+=2;//偏移2个字节.	
+   \   00000016   0x1CA4             ADDS     R4,R4,#+2
+     99          	}
+   \   00000018   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??STMFLASH_Read_0: (+1)
+   \   0000001A   0xB2BF             UXTH     R7,R7
+   \   0000001C   0x42B7             CMP      R7,R6
+   \   0000001E   0xD3F5             BCC.N    ??STMFLASH_Read_1
+    100          }
+   \   00000020   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    101          
+    102          //////////////////////////////////////////////////////////////////////////////////////////////////////
+    103          //WriteAddr:起始地址
+    104          //WriteData:要写入的数据
+
+   \                                 In section .text, align 2, keep-with-next
+    105          void Test_Write(u32 WriteAddr,u16 WriteData)   	
+    106          {
+   \                     Test_Write: (+1)
+   \   00000000   0xB502             PUSH     {R1,LR}
+    107          	STMFLASH_Write(WriteAddr,&WriteData,1);//写入一个字 
+   \   00000002   0x2201             MOVS     R2,#+1
+   \   00000004   0xA900             ADD      R1,SP,#+0
+   \   00000006   0x.... 0x....      BL       STMFLASH_Write
+    108          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     STMFLASH_BUF
+    109          
+    110          
+    111          
+    112          
+    113          
+    114          
+    115          
+    116          
+    117          
+    118          
+    119          
+    120          
+    121          
+    122          
+    123          
+    124          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   STMFLASH_Read
+        24   -> STMFLASH_ReadHalfWord
+       0   STMFLASH_ReadHalfWord
+      40   STMFLASH_Write
+        40   -> FLASH_ErasePage
+         0   -> FLASH_Lock
+        40   -> FLASH_Unlock
+        40   -> STMFLASH_Read
+        40   -> STMFLASH_Write_NoCheck
+      24   STMFLASH_Write_NoCheck
+        24   -> FLASH_ProgramHalfWord
+       8   Test_Write
+         8   -> STMFLASH_Write
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+    2048  STMFLASH_BUF
+      34  STMFLASH_Read
+       4  STMFLASH_ReadHalfWord
+     204  STMFLASH_Write
+      34  STMFLASH_Write_NoCheck
+      12  Test_Write
+
+ 
+ 2 048 bytes in section .bss
+   292 bytes in section .text
+ 
+   292 bytes of CODE memory
+ 2 048 bytes of DATA memory
+
+Errors: none
+Warnings: 8

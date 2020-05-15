@@ -1,0 +1,509 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        25/Feb/2020  16:59:59
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\Ucgui\GUI\Core\GUIPolyE.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\Ucgui\GUI\Core\GUIPolyE.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/ConvertColor\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/ConvertMono\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/Core\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/Font\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/AntiAlias\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/GUIDemo\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/LCDDriver\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/MemDev\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/MultiLayer\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/Widget\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/WM\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI_X\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/Config\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/List\GUIPolyE.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/Obj\GUIPolyE.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\Ucgui\GUI\Core\GUIPolyE.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUIPolyE.c
+     16          Purpose     : Polygon enlarge
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include <math.h>
+     21          #include "GUI.h"
+     22          #include "GUIDebug.h"
+     23          
+     24          /*********************************************************************
+     25          *
+     26          *       Types
+     27          *
+     28          **********************************************************************
+     29          */
+     30          
+     31          typedef struct {
+     32            float x, y;
+     33          } tfPoint;
+     34          
+     35          /*********************************************************************
+     36          *
+     37          *       Static code
+     38          *
+     39          **********************************************************************
+     40          */
+     41          /*********************************************************************
+     42          *
+     43          *       _fround
+     44          */
+
+   \                                 In section .text, align 2, keep-with-next
+     45          static int _fround(float f) {
+   \                     _fround: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     46            if (f>0)
+   \   00000004   0x.... 0x....      BL       __aeabi_f2d
+   \   00000008   0x4602             MOV      R2,R0
+   \   0000000A   0x460B             MOV      R3,R1
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0x.... 0x....      BL       __aeabi_cfrcmple
+   \   00000014   0x4608             MOV      R0,R1
+   \   00000016   0xD206             BCS.N    ??_fround_0
+     47              return f+0.5;
+                            ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \   00000018   0x....             LDR.N    R1,??DataTable0  ;; 0x3fe00000
+   \   0000001A   0x.... 0x....      BL       __aeabi_dadd
+   \   0000001E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000022   0x.... 0x....      B.W      __aeabi_d2iz
+     48            return f-0.5;
+                          ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \                     ??_fround_0: (+1)
+   \   00000026   0x....             LDR.N    R1,??DataTable0_1  ;; 0xbfe00000
+   \   00000028   0x.... 0x....      BL       __aeabi_dadd
+   \   0000002C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000030   0x.... 0x....      B.W      __aeabi_d2iz
+     49          }
+     50          
+     51          /*********************************************************************
+     52          *
+     53          *       _Normalize
+     54          */
+
+   \                                 In section .text, align 2, keep-with-next
+     55          static void _Normalize(tfPoint* pfPoint) {
+   \                     _Normalize: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     56            float fx = pfPoint->x;
+   \   00000004   0x6825             LDR      R5,[R4, #+0]
+     57            float fy = pfPoint->y;
+   \   00000006   0x6866             LDR      R6,[R4, #+4]
+     58            float r = sqrt(fx*fx + fy*fy);
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0x4629             MOV      R1,R5
+   \   0000000C   0x.... 0x....      BL       __aeabi_fmul
+   \   00000010   0x4607             MOV      R7,R0
+   \   00000012   0x4630             MOV      R0,R6
+   \   00000014   0x4631             MOV      R1,R6
+   \   00000016   0x.... 0x....      BL       __aeabi_fmul
+   \   0000001A   0x4639             MOV      R1,R7
+   \   0000001C   0x.... 0x....      BL       __aeabi_fadd
+   \   00000020   0x.... 0x....      BL       __aeabi_f2d
+   \   00000024   0x.... 0x....      BL       sqrt
+   \   00000028   0x.... 0x....      BL       __aeabi_d2f
+   \   0000002C   0x4607             MOV      R7,R0
+     59            if (r > 0) {
+   \   0000002E   0x2100             MOVS     R1,#+0
+   \   00000030   0x.... 0x....      BL       __aeabi_cfrcmple
+   \   00000034   0xD209             BCS.N    ??_Normalize_0
+     60              pfPoint->x = fx/r;
+   \   00000036   0x4628             MOV      R0,R5
+   \   00000038   0x4639             MOV      R1,R7
+   \   0000003A   0x.... 0x....      BL       __aeabi_fdiv
+   \   0000003E   0x6020             STR      R0,[R4, #+0]
+     61              pfPoint->y = fy/r;
+   \   00000040   0x4630             MOV      R0,R6
+   \   00000042   0x4639             MOV      R1,R7
+   \   00000044   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000048   0x6060             STR      R0,[R4, #+4]
+     62            }
+     63          }
+   \                     ??_Normalize_0: (+1)
+   \   0000004A   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+     64          
+     65          /*********************************************************************
+     66          *
+     67          *       _ReverseLen
+     68          */
+
+   \                                 In section .text, align 2, keep-with-next
+     69          static void _ReverseLen(tfPoint* pfPoint) {
+   \                     _ReverseLen: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+     70            float fx = pfPoint->x;
+   \   00000006   0x6825             LDR      R5,[R4, #+0]
+     71            float fy = pfPoint->y;
+   \   00000008   0x6866             LDR      R6,[R4, #+4]
+     72            float r = sqrt(fx*fx/2 + fy*fy/2);
+   \   0000000A   0xF04F 0x577C      MOV      R7,#+1056964608
+   \   0000000E   0x4628             MOV      R0,R5
+   \   00000010   0x4629             MOV      R1,R5
+   \   00000012   0x.... 0x....      BL       __aeabi_fmul
+   \   00000016   0x4639             MOV      R1,R7
+   \   00000018   0x.... 0x....      BL       __aeabi_fmul
+   \   0000001C   0x4680             MOV      R8,R0
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0x4631             MOV      R1,R6
+   \   00000022   0x.... 0x....      BL       __aeabi_fmul
+   \   00000026   0x4639             MOV      R1,R7
+   \   00000028   0x.... 0x....      BL       __aeabi_fmul
+   \   0000002C   0x4641             MOV      R1,R8
+   \   0000002E   0x.... 0x....      BL       __aeabi_fadd
+   \   00000032   0x.... 0x....      BL       __aeabi_f2d
+   \   00000036   0x.... 0x....      BL       sqrt
+   \   0000003A   0x.... 0x....      BL       __aeabi_d2f
+   \   0000003E   0x4607             MOV      R7,R0
+     73            if (r > 0) {
+   \   00000040   0x2100             MOVS     R1,#+0
+   \   00000042   0x.... 0x....      BL       __aeabi_cfrcmple
+   \   00000046   0xD20F             BCS.N    ??_ReverseLen_0
+     74              pfPoint->x = fx/r/r;
+   \   00000048   0x4628             MOV      R0,R5
+   \   0000004A   0x4639             MOV      R1,R7
+   \   0000004C   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000050   0x4639             MOV      R1,R7
+   \   00000052   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000056   0x6020             STR      R0,[R4, #+0]
+     75              pfPoint->y = fy/r/r;
+   \   00000058   0x4630             MOV      R0,R6
+   \   0000005A   0x4639             MOV      R1,R7
+   \   0000005C   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000060   0x4639             MOV      R1,R7
+   \   00000062   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000066   0x6060             STR      R0,[R4, #+4]
+     76            }
+     77          }
+   \                     ??_ReverseLen_0: (+1)
+   \   00000068   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+     78          
+     79          /*********************************************************************
+     80          *
+     81          *       _GetVect
+     82          */
+
+   \                                 In section .text, align 2, keep-with-next
+     83          static void _GetVect(tfPoint* pfPoint, const GUI_POINT* pSrc, int NumPoints, int Index) {
+   \                     _GetVect: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+     84            int Off0 = (Index + NumPoints-1) % NumPoints;
+   \   00000006   0x18D0             ADDS     R0,R2,R3
+   \   00000008   0x1E40             SUBS     R0,R0,#+1
+   \   0000000A   0xFB90 0xF1F2      SDIV     R1,R0,R2
+   \   0000000E   0xFB02 0x0611      MLS      R6,R2,R1,R0
+     85            int Off1 = Index % NumPoints;
+   \   00000012   0xFB93 0xF0F2      SDIV     R0,R3,R2
+   \   00000016   0xFB02 0x3710      MLS      R7,R2,R0,R3
+     86            pfPoint->x = pSrc[Off1].x - pSrc[Off0].x; 
+   \   0000001A   0xF935 0x0027      LDRSH    R0,[R5, R7, LSL #+2]
+   \   0000001E   0xF935 0x1026      LDRSH    R1,[R5, R6, LSL #+2]
+   \   00000022   0x1A40             SUBS     R0,R0,R1
+   \   00000024   0x.... 0x....      BL       __aeabi_i2f
+   \   00000028   0x6020             STR      R0,[R4, #+0]
+     87            pfPoint->y = pSrc[Off1].y - pSrc[Off0].y; 
+   \   0000002A   0xEB05 0x0087      ADD      R0,R5,R7, LSL #+2
+   \   0000002E   0xF9B0 0x0002      LDRSH    R0,[R0, #+2]
+   \   00000032   0xEB05 0x0186      ADD      R1,R5,R6, LSL #+2
+   \   00000036   0xF9B1 0x1002      LDRSH    R1,[R1, #+2]
+   \   0000003A   0x1A40             SUBS     R0,R0,R1
+   \   0000003C   0x.... 0x....      BL       __aeabi_i2f
+   \   00000040   0x6060             STR      R0,[R4, #+4]
+     88          }
+   \   00000042   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+     89          
+     90          /*********************************************************************
+     91          *
+     92          *       Public code
+     93          *
+     94          **********************************************************************
+     95          */
+     96          /*********************************************************************
+     97          *
+     98          *       GUI_EnlargePolygon
+     99          */
+    100          #if 0
+    101          void GUI_EnlargePolygon(GUI_POINT* pDest, const GUI_POINT* pSrc, int NumPoints, int Len) {
+    102            int j;
+    103            /* Calc destination points */
+    104            for (j=0; j<NumPoints; j++) {
+    105              int x, y;
+    106              tfPoint aVect[2];
+    107              /* Get the vectors */
+    108              _GetVect(&aVect[0], pSrc, NumPoints, j);
+    109              _GetVect(&aVect[1], pSrc, NumPoints, j+1);
+    110              /* Normalize the vectors and add vectors */
+    111              _Normalize(&aVect[0]);
+    112              _Normalize(&aVect[1]);
+    113              aVect[0].x += aVect[1].x;
+    114              aVect[0].y += aVect[1].y;
+    115              /* Resulting vector needs to be normalized again */
+    116              _Normalize(&aVect[0]);
+    117              x =  _fround(aVect[0].y * Len);
+    118              y = -_fround(aVect[0].x * Len);
+    119              /* Store destination */
+    120              (pDest+j)->x = (pSrc+j)->x + x;
+    121              (pDest+j)->y = (pSrc+j)->y + y;
+    122            }
+    123          }
+    124          
+    125          #else
+    126          
+
+   \                                 In section .text, align 2, keep-with-next
+    127          void GUI_EnlargePolygon(GUI_POINT* pDest, const GUI_POINT* pSrc, int NumPoints, int Len) {
+   \                     GUI_EnlargePolygon: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000004   0xB085             SUB      SP,SP,#+20
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x460D             MOV      R5,R1
+   \   0000000A   0x4616             MOV      R6,R2
+   \   0000000C   0x461F             MOV      R7,R3
+    128            int j;
+    129            /* Calc destination points */
+    130            for (j=0; j<NumPoints; j++) {
+   \   0000000E   0xF04F 0x0800      MOV      R8,#+0
+   \   00000012   0xE045             B.N      ??GUI_EnlargePolygon_0
+    131              int x, y;
+    132              tfPoint aVect[2];
+    133              /* Get the vectors */
+    134              _GetVect(&aVect[0], pSrc, NumPoints, j);
+   \                     ??GUI_EnlargePolygon_1: (+1)
+   \   00000014   0x4643             MOV      R3,R8
+   \   00000016   0x4632             MOV      R2,R6
+   \   00000018   0x4629             MOV      R1,R5
+   \   0000001A   0xA800             ADD      R0,SP,#+0
+   \   0000001C   0x.... 0x....      BL       _GetVect
+    135              _GetVect(&aVect[1], pSrc, NumPoints, j+1);
+   \   00000020   0xF108 0x0901      ADD      R9,R8,#+1
+   \   00000024   0x464B             MOV      R3,R9
+   \   00000026   0x4632             MOV      R2,R6
+   \   00000028   0x4629             MOV      R1,R5
+   \   0000002A   0xA802             ADD      R0,SP,#+8
+   \   0000002C   0x.... 0x....      BL       _GetVect
+    136              /* Normalize the vectors and add vectors */
+    137              _Normalize(&aVect[0]);
+   \   00000030   0xA800             ADD      R0,SP,#+0
+   \   00000032   0x.... 0x....      BL       _Normalize
+    138              _Normalize(&aVect[1]);
+   \   00000036   0xA802             ADD      R0,SP,#+8
+   \   00000038   0x.... 0x....      BL       _Normalize
+    139              aVect[0].x += aVect[1].x;
+   \   0000003C   0xF10D 0x0A00      ADD      R10,SP,#+0
+   \   00000040   0x9900             LDR      R1,[SP, #+0]
+   \   00000042   0xF8DA 0x0008      LDR      R0,[R10, #+8]
+   \   00000046   0x.... 0x....      BL       __aeabi_fadd
+   \   0000004A   0x9000             STR      R0,[SP, #+0]
+    140              aVect[0].y += aVect[1].y;
+   \   0000004C   0xF8DA 0x1004      LDR      R1,[R10, #+4]
+   \   00000050   0x9803             LDR      R0,[SP, #+12]
+   \   00000052   0x.... 0x....      BL       __aeabi_fadd
+   \   00000056   0xF8CA 0x0004      STR      R0,[R10, #+4]
+    141              /* Resulting vector needs to be normalized again */
+    142              _ReverseLen(&aVect[0]);
+   \   0000005A   0xA800             ADD      R0,SP,#+0
+   \   0000005C   0x.... 0x....      BL       _ReverseLen
+    143              x =  _fround(aVect[0].y * Len);
+   \   00000060   0x4638             MOV      R0,R7
+   \   00000062   0x.... 0x....      BL       __aeabi_i2f
+   \   00000066   0x4683             MOV      R11,R0
+   \   00000068   0xF8DA 0x0004      LDR      R0,[R10, #+4]
+   \   0000006C   0x4659             MOV      R1,R11
+   \   0000006E   0x.... 0x....      BL       __aeabi_fmul
+   \   00000072   0x.... 0x....      BL       _fround
+   \   00000076   0x4682             MOV      R10,R0
+    144              y = -_fround(aVect[0].x * Len);
+   \   00000078   0x9800             LDR      R0,[SP, #+0]
+   \   0000007A   0x4659             MOV      R1,R11
+   \   0000007C   0x.... 0x....      BL       __aeabi_fmul
+   \   00000080   0x.... 0x....      BL       _fround
+   \   00000084   0x4240             RSBS     R0,R0,#+0
+    145              /* Store destination */
+    146              (pDest+j)->x = (pSrc+j)->x + x;
+   \   00000086   0xF835 0x1028      LDRH     R1,[R5, R8, LSL #+2]
+   \   0000008A   0x4451             ADD      R1,R10,R1
+   \   0000008C   0xF824 0x1028      STRH     R1,[R4, R8, LSL #+2]
+    147              (pDest+j)->y = (pSrc+j)->y + y;
+   \   00000090   0xEB05 0x0188      ADD      R1,R5,R8, LSL #+2
+   \   00000094   0x8849             LDRH     R1,[R1, #+2]
+   \   00000096   0x1840             ADDS     R0,R0,R1
+   \   00000098   0xEB04 0x0188      ADD      R1,R4,R8, LSL #+2
+   \   0000009C   0x8048             STRH     R0,[R1, #+2]
+    148            }
+   \   0000009E   0x46C8             MOV      R8,R9
+   \                     ??GUI_EnlargePolygon_0: (+1)
+   \   000000A0   0x45B0             CMP      R8,R6
+   \   000000A2   0xDBB7             BLT.N    ??GUI_EnlargePolygon_1
+    149          }
+   \   000000A4   0xB005             ADD      SP,SP,#+20
+   \   000000A6   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x3FE00000         DC32     0x3fe00000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   0xBFE00000         DC32     0xbfe00000
+    150          #endif
+    151          
+    152          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      56   GUI_EnlargePolygon
+        56   -> _GetVect
+        56   -> _Normalize
+        56   -> _ReverseLen
+        56   -> __aeabi_fadd
+        56   -> __aeabi_fmul
+        56   -> __aeabi_i2f
+        56   -> _fround
+      24   _GetVect
+        24   -> __aeabi_i2f
+      24   _Normalize
+        24   -> __aeabi_cfrcmple
+        24   -> __aeabi_d2f
+        24   -> __aeabi_f2d
+        24   -> __aeabi_fadd
+        24   -> __aeabi_fdiv
+        24   -> __aeabi_fmul
+        24   -> sqrt
+      24   _ReverseLen
+        24   -> __aeabi_cfrcmple
+        24   -> __aeabi_d2f
+        24   -> __aeabi_f2d
+        24   -> __aeabi_fadd
+        24   -> __aeabi_fdiv
+        24   -> __aeabi_fmul
+        24   -> sqrt
+       8   _fround
+         8   -> __aeabi_cfrcmple
+         0   -> __aeabi_d2iz
+         8   -> __aeabi_dadd
+         8   -> __aeabi_f2d
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+     170  GUI_EnlargePolygon
+      68  _GetVect
+      76  _Normalize
+     108  _ReverseLen
+      52  _fround
+
+ 
+ 482 bytes in section .text
+ 
+ 482 bytes of CODE memory
+
+Errors: none
+Warnings: 2

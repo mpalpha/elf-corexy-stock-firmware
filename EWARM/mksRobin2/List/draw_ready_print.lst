@@ -1,0 +1,1880 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        25/Feb/2020  18:22:54
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ready_print.cpp
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ready_print.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\..\Middlewares\GUI\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/List\draw_ready_print.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\EWARM\mksRobin2/Obj\draw_ready_print.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ready_print.cpp
+      1          #include "gui.h"
+      2          #include "button.h"
+      3          #include "PROGBAR.h"
+      4          #include "draw_ui.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\EWARM/../Middlewares/Third_Party/Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Inc\mks_cfg.h",609  Warning[Pe083]: 
+          type qualifier specified more than once
+
+    #define FILAMENT_CHANGE_TEXT_EN				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_en.h",135  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_EN"
+          (declared at line 113)
+
+  #define DIALOG_UNBIND_PRINTER_CN            "Ëß£Èô§ÁªëÂÆö?"
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_s_cn.h",218  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_CN"
+          (declared at line 213)
+
+    #define FILAMENT_CHANGE_TEXT_T_CN				"ÂæÖÊâìÂç∞Ê©üÊö´ÂÅúÂêé,\nË´ãÊåâ<ÈÄ≤Êñô>Êàñ<ÈÄÄÊñô>"
+            ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_t_cn.h",127  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_T_CN"
+          (declared at line 113)
+
+    #define FILAMENT_CHANGE_TEXT_RU				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_ru.h",133  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_RU"
+          (declared at line 113)
+
+  #define DIALOG_UNBIND_PRINTER_RU            "Unbind the printer?"
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_ru.h",230  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_RU"
+          (declared at line 225)
+
+    #define FILAMENT_CHANGE_TEXT_FR				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_fr.h",133  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_FR"
+          (declared at line 113)
+
+  #define DIALOG_UNBIND_PRINTER_FR        "Unbind the printer?"
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_fr.h",233  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_FR"
+          (declared at line 229)
+
+    #define FILAMENT_CHANGE_TEXT_SP				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_sp.h",132  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_SP"
+          (declared at line 113)
+
+    #define FILAMENT_CHANGE_TEXT_IT				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_it.h",133  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_IT"
+          (declared at line 113)
+
+  #define DIALOG_UNBIND_PRINTER_IT                "Unbind the printer?"
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Language_it.h",229  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_IT"
+          (declared at line 224)
+
+  #define FILAMENT_CHANGE_TEXT_JP				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Multi_language.h",652  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_JP"
+          (declared at line 645)
+
+  #define FILAMENT_CHANGE_TEXT_GN				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\Multi_language\Multi_language.h",860  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_GN"
+          (declared at line 854)
+
+  #define Simple_Dec"ºı…Ÿ"
+                    ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ui.h",492  Warning[Pe1649]: 
+          white space is required between the macro name "Simple_Dec" and its
+          replacement text
+
+  #define Simple_Speed "ÀŸ∂»"
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ui.h",547  Warning[Pe047]: 
+          incompatible redefinition of macro "Simple_Speed" (declared at line
+          544)
+
+  #define Complex_Speed "ÀŸ∂»"
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ui.h",548  Warning[Pe047]: 
+          incompatible redefinition of macro "Complex_Speed" (declared at line
+          545)
+      5          #include "draw_ready_print.h"
+      6          #include "draw_print_file.h"
+      7          #include "fontLib.h"
+      8          #include "draw_move_motor.h"
+      9          #include "text.h"
+     10          //#include "printer.h"
+     11          #include "draw_pre_heat.h"
+     12          #include "draw_extrusion.h"
+     13          #include "draw_zero.h"
+     14          #include "draw_set.h"
+     15          #include "draw_more.h"
+     16          #include "draw_fan.h"
+     17          #include "draw_more.h"
+     18          #include "draw_log_ui.h"
+     19          #include "draw_language.h"
+     20          #include "pic_manager.h"
+     21          #include "spi_flash.h"
+
+  #define IS_SPI_DIRECTION_MODE(MODE) (((MODE) == SPI_Direction_2Lines_FullDuplex) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",132  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DIRECTION_MODE" (declared
+          at line 466 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_MODE(MODE) (((MODE) == SPI_Mode_Master) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",146  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_MODE" (declared at line
+          459 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_DATASIZE(DATASIZE) (((DATASIZE) == SPI_DataSize_16b) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",158  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DATASIZE" (declared at
+          line 488 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_CPOL(CPOL) (((CPOL) == SPI_CPOL_Low) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",170  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPOL" (declared at line
+          496 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_CPHA(CPHA) (((CPHA) == SPI_CPHA_1Edge) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",182  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPHA" (declared at line
+          504 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_NSS(NSS) (((NSS) == SPI_NSS_Soft) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",194  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_NSS" (declared at line
+          512 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_BAUDRATE_PRESCALER(PRESCALER) (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",212  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_BAUDRATE_PRESCALER"
+          (declared at line 521 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_FIRST_BIT(BIT) (((BIT) == SPI_FirstBit_MSB) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",230  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_FIRST_BIT" (declared at
+          line 535 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define SPI_FLAG_CRCERR                 ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",408  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_CRCERR" (declared at
+          line 308 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define SPI_FLAG_MODF                   ((uint16_t)0x0020)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",409  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_MODF" (declared at line
+          309 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL) ((POLYNOMIAL) >= 0x1)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",425  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CRC_POLYNOMIAL" (declared
+          at line 558 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #else defined(MKS_ROBIN_NANO)
+        ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Drivers\BSP\Components\w25qxx\spi_flash.h",40  Warning[Pe014]: 
+          extra text after expected end of preprocessing directive
+     22          #include "draw_manual_leveling.h"
+     23          #include "draw_tool.h"
+     24          //#include "sd_usr.h"
+     25          #include "pic_manager.h"
+     26          #include "spi_flash.h"
+     27          #include "draw_meshleveling.h"
+     28          #include "marlin.h"
+
+  #define strcpy_P(dest, src) strcpy((dest), (src))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+          incompatible redefinition of macro "strcpy_P" (declared at line 93
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define strstr_P(a, b) strstr((a), (b))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+          incompatible redefinition of macro "strstr_P" (declared at line 94
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+          incompatible redefinition of macro "sprintf_P" (declared at line 95
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define pgm_read_word_near(addr) pgm_read_word(addr)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+          incompatible redefinition of macro "pgm_read_word_near" (declared at
+          line 65 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_N
+          ano_code\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+    }
+    ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\Middlewares\Third_Party\Marlin\marlin.h",538  Warning[Pe940]: 
+          missing return statement at end of non-void function
+          "position_is_reachable_IS_KINEMATIC"
+     29          #ifndef GUI_FLASH
+     30          #define GUI_FLASH
+     31          #endif
+     32          
+
+   \                                 In section .bss, align 4
+     33          static BUTTON_STRUCT  buttonPreHeat, buttonPrint, buttonExtruder, buttonMove, buttonFan, buttonMore, buttonZero, buttonSet,buttonLeveling;
+     34          static BUTTON_STRUCT  buttonTool;
+     35          
+     36          static GUI_HWIN hReadyPrintWnd;
+   \                     hReadyPrintWnd:
+   \   00000000                      DS8 2
+   \   00000002                      DS8 2
+   \   00000004                      DS8 24
+   \   0000001C                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonExtruder:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonMore:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonSet:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonTool:
+   \   00000000                      DS8 24
+     37          static TEXT_Handle textPrintTemp;
+     38          static TEXT_Handle textPrintTemp_CHIN;
+     39          
+
+   \                                 In section .data, align 4
+     40          int X_ADD=5,X_INTERVAL=10;   //**Õº∆¨º‰∏Ù
+   \                     X_ADD:
+   \   00000000   0x00000005         DC32 5
+
+   \                                 In section .data, align 4
+   \                     X_INTERVAL:
+   \   00000000   0x0000000A         DC32 10
+     41          extern char cmd_code[201];
+     42          extern char x[1];
+     43          extern volatile char *codebufpoint;
+     44          extern volatile uint8_t  get_temp_flag;
+     45          extern uint8_t  Get_Temperature_Flg;
+     46          extern uint8_t leveling_first_time;
+     47          
+     48          extern uint8_t disp_in_file_dir;
+     49          
+     50          
+     51          extern int8_t curSprayerTemp[10];
+     52          extern int8_t curBedTemp[10];
+     53          	
+     54          
+     55          extern GUI_FLASH const GUI_FONT GUI_FontHZ_fontHz18;
+     56          
+
+   \                                 In section .data, align 4
+     57          GUI_BITMAP bmp_test_struct = {
+   \                     bmp_test_struct:
+   \   00000000   0x004E 0x0068      DC16 78, 104, 160, 16
+   \              0x00A0 0x0010
+   \   00000008   0x00000000         DC32 0H, 0H, GUI_BitmapMethodsM565
+   \              0x00000000   
+   \              0x........   
+     58            78,//80, /* XSize */
+     59            104,//50, /* YSize */
+     60            160, /* BytesPerLine */
+     61            16, /* BitsPerPixel */
+     62            NULL,  /* Pointer to picture data */
+     63            NULL  /* Pointer to palette */
+     64           ,GUI_DRAW_BMPM565
+     65          };
+     66          
+     67          
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          static void cbReadPrintWin(WM_MESSAGE * pMsg) {
+     70          	
+     71          	switch (pMsg->MsgId) {
+   \                     _Z14cbReadPrintWinP10WM_MESSAGE: (+1)
+   \   00000000   0x6801             LDR      R1,[R0, #+0]
+   \   00000002   0x290F             CMP      R1,#+15
+   \   00000004   0xD100             BNE.N    ??cbReadPrintWin_0
+   \   00000006   0x4770             BX       LR
+   \                     ??cbReadPrintWin_0: (+1)
+   \   00000008   0xB510             PUSH     {R4,LR}
+   \   0000000A   0x2926             CMP      R1,#+38
+   \   0000000C   0xF040 0x80C3      BNE.W    ??cbReadPrintWin_1
+     72          		case WM_PAINT:
+     73          			#if 0
+     74          			GUI_SetColor(GUI_WHITE);
+     75          			GUI_DrawRect(LCD_WIDTH/4 + 1, 1, LCD_WIDTH *3 / 4 -3, imgHeight /2 - 3);
+     76          			GUI_SetColor(GUI_STATE_COLOR);
+     77          			GUI_FillRect(LCD_WIDTH/4 + 2, 2, LCD_WIDTH *3 / 4 -4, imgHeight /2 - 4);
+     78          			#endif
+     79          			break;
+     80          		
+     81          		  
+     82          		case WM_NOTIFY_PARENT:
+     83          			if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
+   \   00000010   0x6881             LDR      R1,[R0, #+8]
+   \   00000012   0x2902             CMP      R1,#+2
+   \   00000014   0xF040 0x80C3      BNE.W    ??cbReadPrintWin_2
+     84          			{
+     85          				if(pMsg->hWinSrc == buttonPrint.btnHandle)
+   \   00000018   0xF9B0 0x0006      LDRSH    R0,[R0, #+6]
+   \   0000001C   0x.... 0x....      LDR.W    R1,??DataTable12
+   \   00000020   0xF9B1 0x201C      LDRSH    R2,[R1, #+28]
+   \   00000024   0x4290             CMP      R0,R2
+   \   00000026   0xD10C             BNE.N    ??cbReadPrintWin_3
+     86          				{
+     87          					disp_in_file_dir = 1;
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x.... 0x....      LDR.W    R1,??DataTable12_1
+   \   0000002E   0x7008             STRB     R0,[R1, #+0]
+     88          					last_disp_state = PRINT_READY_UI;
+   \   00000030   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   00000034   0x7008             STRB     R0,[R1, #+0]
+     89          					Clear_ready_print();
+   \   00000036   0x.... 0x....      BL       Clear_ready_print
+     90          					draw_print_file();      //printing ∞¥º¸ »Îø⁄
+   \   0000003A   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000003E   0x.... 0x....      B.W      draw_print_file
+     91          				}
+     92          				else if(pMsg->hWinSrc == buttonMove.btnHandle)
+   \                     ??cbReadPrintWin_3: (+1)
+   \   00000042   0x.... 0x....      LDR.W    R2,??DataTable12_3
+   \   00000046   0xF9B2 0x3018      LDRSH    R3,[R2, #+24]
+   \   0000004A   0x4298             CMP      R0,R3
+   \   0000004C   0xD10D             BNE.N    ??cbReadPrintWin_4
+     93          				{
+     94          					gCfgItems.getzpos_flg = 1;
+   \   0000004E   0x2001             MOVS     R0,#+1
+   \   00000050   0x.... 0x....      LDR.W    R1,??DataTable12_4
+   \   00000054   0xF881 0x01A1      STRB     R0,[R1, #+417]
+     95          					last_disp_state = PRINT_READY_UI;
+   \   00000058   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   0000005C   0x7008             STRB     R0,[R1, #+0]
+     96          					Clear_ready_print();
+   \   0000005E   0x.... 0x....      BL       Clear_ready_print
+     97          					draw_move_motor();			
+   \   00000062   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000066   0x.... 0x....      B.W      draw_move_motor
+     98          				}
+     99          				else if(pMsg->hWinSrc == buttonPreHeat.btnHandle)
+   \                     ??cbReadPrintWin_4: (+1)
+   \   0000006A   0xF9B1 0x1004      LDRSH    R1,[R1, #+4]
+   \   0000006E   0x4288             CMP      R0,R1
+   \   00000070   0xD109             BNE.N    ??cbReadPrintWin_5
+    100          				{
+    101          					//get_temp_flag=1;
+    102          					//Get_Temperature_Flg = 1;
+    103          					last_disp_state = PRINT_READY_UI;
+   \   00000072   0x2001             MOVS     R0,#+1
+   \   00000074   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   00000078   0x7008             STRB     R0,[R1, #+0]
+    104          					Clear_ready_print();
+   \   0000007A   0x.... 0x....      BL       Clear_ready_print
+    105          					draw_preHeat();
+   \   0000007E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000082   0x.... 0x....      B.W      draw_preHeat
+    106          				}
+    107          				else if(pMsg->hWinSrc == buttonExtruder.btnHandle)
+   \                     ??cbReadPrintWin_5: (+1)
+   \   00000086   0xF9B2 0x1000      LDRSH    R1,[R2, #+0]
+   \   0000008A   0x4288             CMP      R0,R1
+   \   0000008C   0xD112             BNE.N    ??cbReadPrintWin_6
+    108          				{
+    109          					gCfgItems.extruSpeed_bak = feedrate_mm_s;
+                 					                         ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \   0000008E   0x.... 0x....      LDR.W    R0,??DataTable12_5
+   \   00000092   0x6800             LDR      R0,[R0, #+0]
+   \   00000094   0x.... 0x....      BL       __aeabi_f2iz
+   \   00000098   0x.... 0x....      LDR.W    R1,??DataTable12_4
+   \   0000009C   0xF881 0x00B0      STRB     R0,[R1, #+176]
+    110          					//Get_Temperature_Flg = 1;
+    111          					//get_temp_flag = 1;
+    112          					last_disp_state = PRINT_READY_UI;
+   \   000000A0   0x2001             MOVS     R0,#+1
+   \   000000A2   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   000000A6   0x7008             STRB     R0,[R1, #+0]
+    113          					Clear_ready_print();
+   \   000000A8   0x.... 0x....      BL       Clear_ready_print
+    114          					draw_extrusion();
+   \   000000AC   0xE8BD 0x4010      POP      {R4,LR}
+   \   000000B0   0x.... 0x....      B.W      draw_extrusion
+    115          				}
+    116          				else if(pMsg->hWinSrc == buttonZero.btnHandle)
+   \                     ??cbReadPrintWin_6: (+1)
+   \   000000B4   0x.... 0x....      LDR.W    R1,??DataTable12_6
+   \   000000B8   0xF9B1 0x2018      LDRSH    R2,[R1, #+24]
+   \   000000BC   0x4290             CMP      R0,R2
+   \   000000BE   0xD109             BNE.N    ??cbReadPrintWin_7
+    117          				{
+    118          					last_disp_state = PRINT_READY_UI;
+   \   000000C0   0x2001             MOVS     R0,#+1
+   \   000000C2   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   000000C6   0x7008             STRB     R0,[R1, #+0]
+    119          					Clear_ready_print();
+   \   000000C8   0x.... 0x....      BL       Clear_ready_print
+    120          					draw_Zero();
+   \   000000CC   0xE8BD 0x4010      POP      {R4,LR}
+   \   000000D0   0x.... 0x....      B.W      draw_Zero
+    121          				}
+    122          
+    123          				else if(pMsg->hWinSrc == buttonSet.btnHandle)
+   \                     ??cbReadPrintWin_7: (+1)
+   \   000000D4   0x.... 0x....      LDR.W    R2,??DataTable12_7
+   \   000000D8   0xF9B2 0x3000      LDRSH    R3,[R2, #+0]
+   \   000000DC   0x4298             CMP      R0,R3
+   \   000000DE   0xD109             BNE.N    ??cbReadPrintWin_8
+    124          				{
+    125          					last_disp_state = PRINT_READY_UI;
+   \   000000E0   0x2001             MOVS     R0,#+1
+   \   000000E2   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   000000E6   0x7008             STRB     R0,[R1, #+0]
+    126          					Clear_ready_print();
+   \   000000E8   0x.... 0x....      BL       Clear_ready_print
+    127          					draw_Set();
+   \   000000EC   0xE8BD 0x4010      POP      {R4,LR}
+   \   000000F0   0x.... 0x....      B.W      draw_Set
+    128          				}           
+    129          				else if(pMsg->hWinSrc == buttonMore.btnHandle)
+   \                     ??cbReadPrintWin_8: (+1)
+   \   000000F4   0xF9B1 0x1000      LDRSH    R1,[R1, #+0]
+   \   000000F8   0x4288             CMP      R0,R1
+   \   000000FA   0xD109             BNE.N    ??cbReadPrintWin_9
+    130          				{
+    131          					last_disp_state = PRINT_READY_UI;
+   \   000000FC   0x2001             MOVS     R0,#+1
+   \   000000FE   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   00000102   0x7008             STRB     R0,[R1, #+0]
+    132          					Clear_ready_print();
+   \   00000104   0x.... 0x....      BL       Clear_ready_print
+    133          					draw_More();
+   \   00000108   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000010C   0x.... 0x....      B.W      draw_More
+    134          				}
+    135          				else if(pMsg->hWinSrc == buttonTool.btnHandle)
+   \                     ??cbReadPrintWin_9: (+1)
+   \   00000110   0x.... 0x....      LDR.W    R1,??DataTable12_8
+   \   00000114   0xF9B1 0x1000      LDRSH    R1,[R1, #+0]
+   \   00000118   0x4288             CMP      R0,R1
+   \   0000011A   0xD109             BNE.N    ??cbReadPrintWin_10
+    136          				{
+    137          					last_disp_state = PRINT_READY_UI;
+   \   0000011C   0x2001             MOVS     R0,#+1
+   \   0000011E   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   00000122   0x7008             STRB     R0,[R1, #+0]
+    138          					Clear_ready_print();
+   \   00000124   0x.... 0x....      BL       Clear_ready_print
+    139          					draw_tool();
+   \   00000128   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000012C   0x.... 0x....      B.W      _Z9draw_toolv
+    140          				}  
+    141          				else if(pMsg->hWinSrc == buttonLeveling.btnHandle)
+   \                     ??cbReadPrintWin_10: (+1)
+   \   00000130   0xF9B2 0x1018      LDRSH    R1,[R2, #+24]
+   \   00000134   0x4288             CMP      R0,R1
+   \   00000136   0xD132             BNE.N    ??cbReadPrintWin_2
+    142          				{
+    143          					
+    144          					if(gCfgItems.leveling_mode == 1)
+   \   00000138   0x.... 0x....      LDR.W    R0,??DataTable12_4
+   \   0000013C   0xF890 0x00FC      LDRB     R0,[R0, #+252]
+   \   00000140   0x2801             CMP      R0,#+1
+   \   00000142   0xD11B             BNE.N    ??cbReadPrintWin_11
+    145          					{
+    146          						if(BED_LEVELING_METHOD & MESH_BED_LEVELING)
+   \   00000144   0x.... 0x....      LDR.W    R0,??DataTable12_9
+   \   00000148   0xF890 0x0040      LDRB     R0,[R0, #+64]
+   \   0000014C   0x0680             LSLS     R0,R0,#+26
+   \   0000014E   0xD509             BPL.N    ??cbReadPrintWin_12
+    147                                  {
+    148                                      last_disp_state = PRINT_READY_UI;
+   \   00000150   0x2001             MOVS     R0,#+1
+   \   00000152   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   00000156   0x7008             STRB     R0,[R1, #+0]
+    149                                      Clear_ready_print();
+   \   00000158   0x.... 0x....      BL       Clear_ready_print
+    150                                      draw_meshleveling();
+   \   0000015C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000160   0x.... 0x....      B.W      draw_meshleveling
+    151                                  }   
+    152                                  else
+    153                                  {
+    154          						    SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_AUTOLEVELING_ADDR,201);
+   \                     ??cbReadPrintWin_12: (+1)
+   \   00000164   0x.... 0x....      LDR.W    R4,??DataTable12_10
+   \   00000168   0x22C9             MOVS     R2,#+201
+   \   0000016A   0xF44F 0x6178      MOV      R1,#+3968
+   \   0000016E   0x4620             MOV      R0,R4
+   \   00000170   0x.... 0x....      BL       SPI_FLASH_BufferRead
+    155          						    codebufpoint = cmd_code;		
+   \   00000174   0x.... 0x....      LDR.W    R0,??DataTable12_11
+   \   00000178   0x6004             STR      R4,[R0, #+0]
+   \   0000017A   0xBD10             POP      {R4,PC}
+    156                                  }
+    157          					}
+    158          					else
+    159          					{
+    160          						leveling_first_time = 1;
+   \                     ??cbReadPrintWin_11: (+1)
+   \   0000017C   0x2001             MOVS     R0,#+1
+   \   0000017E   0x.... 0x....      LDR.W    R1,??DataTable12_12
+   \   00000182   0x7008             STRB     R0,[R1, #+0]
+    161          						last_disp_state = PRINT_READY_UI;
+   \   00000184   0x.... 0x....      LDR.W    R1,??DataTable12_2
+   \   00000188   0x7008             STRB     R0,[R1, #+0]
+    162          						Clear_ready_print();
+   \   0000018A   0x.... 0x....      BL       Clear_ready_print
+    163          						draw_leveling();
+   \   0000018E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000192   0x.... 0x....      B.W      draw_leveling
+    164          					}
+    165          					
+    166          					
+    167          				}
+    168          				
+    169          			}
+    170          			break;
+    171          		default:
+    172          			WM_DefaultProc(pMsg);
+   \                     ??cbReadPrintWin_1: (+1)
+   \   00000196   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000019A   0x.... 0x....      B.W      WM_DefaultProc
+    173          	}
+    174          }
+   \                     ??cbReadPrintWin_2: (+1)
+   \   0000019E   0xBD10             POP      {R4,PC}          ;; return
+    175          
+    176          
+    177          
+    178          
+    179          
+
+   \                                 In section .text, align 2, keep-with-next
+    180          void draw_ready_print()
+    181          {
+   \                     draw_ready_print: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000004   0xB085             SUB      SP,SP,#+20
+    182          	int i;
+                 	    ^
+Warning[Pe177]: variable "i" was declared but never referenced
+
+  static BUTTON_STRUCT  buttonPreHeat, buttonPrint, buttonExtruder, buttonMove, buttonFan, buttonMore, buttonZero, buttonSet,buttonLeveling;
+                                                                                ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ready_print.cpp",33  Warning[Pe177]: 
+          variable "buttonFan" was declared but never referenced
+
+  static TEXT_Handle textPrintTemp;
+                     ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ready_print.cpp",37  Warning[Pe177]: 
+          variable "textPrintTemp" was declared but never referenced
+
+  static TEXT_Handle textPrintTemp_CHIN;
+                     ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_ºŒ∫Ã»˝Œ¨\mksRobin_Nano_code\User\ui\draw_ready_print.cpp",38  Warning[Pe177]: 
+          variable "textPrintTemp_CHIN" was declared but never referenced
+    183          
+    184          	disp_state_stack._disp_index = 0;
+   \   00000006   0x.... 0x....      LDR.W    R4,??DataTable12_13
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0xF884 0x0064      STRB     R0,[R4, #+100]
+    185          	memset(disp_state_stack._disp_state, 0, sizeof(disp_state_stack._disp_state));
+   \   00000010   0x2264             MOVS     R2,#+100
+   \   00000012   0x4601             MOV      R1,R0
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0x.... 0x....      BL       memset
+    186          	disp_state_stack._disp_state[disp_state_stack._disp_index] = PRINT_READY_UI;
+   \   0000001A   0x2001             MOVS     R0,#+1
+   \   0000001C   0xF994 0x1064      LDRSB    R1,[R4, #+100]
+   \   00000020   0x5508             STRB     R0,[R1, R4]
+    187          	
+    188          	disp_state = PRINT_READY_UI;
+   \   00000022   0x.... 0x....      LDR.W    R1,??DataTable12_14
+   \   00000026   0x7008             STRB     R0,[R1, #+0]
+    189          	
+    190          	GUI_SetFont(&GUI_FontHZ_fontHz14);
+   \   00000028   0x.... 0x....      LDR.W    R0,??DataTable12_15
+   \   0000002C   0x.... 0x....      BL       GUI_SetFont
+    191          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000030   0x.... 0x....      LDR.W    R4,??DataTable12_4
+   \   00000034   0x6860             LDR      R0,[R4, #+4]
+   \   00000036   0x.... 0x....      BL       GUI_SetBkColor
+    192          	GUI_SetColor(gCfgItems.title_color);
+   \   0000003A   0x1D27             ADDS     R7,R4,#+4
+   \   0000003C   0x6878             LDR      R0,[R7, #+4]
+   \   0000003E   0x.... 0x....      BL       GUI_SetColor
+    193          	GUI_Clear();
+   \   00000042   0x.... 0x....      BL       GUI_Clear
+    194          	
+    195          	if(gCfgItems.display_style == 0)
+   \   00000046   0x.... 0x....      LDR.W    R5,??DataTable12_7
+   \   0000004A   0x.... 0x....      LDR.W    R8,??DataTable12
+   \   0000004E   0x.... 0x....      LDR.W    R6,??DataTable12_16
+   \   00000052   0xF894 0x0295      LDRB     R0,[R4, #+661]
+   \   00000056   0x2800             CMP      R0,#+0
+   \   00000058   0xF040 0x829A      BNE.W    ??draw_ready_print_0
+    196          	{
+    197          	GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
+   \   0000005C   0x.... 0x....      BL       creat_title_text
+   \   00000060   0x2205             MOVS     R2,#+5
+   \   00000062   0x2103             MOVS     R1,#+3
+   \   00000064   0x.... 0x....      BL       GUI_DispStringAt
+    198          
+    199          	hReadyPrintWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbReadPrintWin, 0);
+   \   00000068   0x2000             MOVS     R0,#+0
+   \   0000006A   0x9002             STR      R0,[SP, #+8]
+   \   0000006C   0x9601             STR      R6,[SP, #+4]
+   \   0000006E   0x2002             MOVS     R0,#+2
+   \   00000070   0x9000             STR      R0,[SP, #+0]
+   \   00000072   0xF44F 0x738E      MOV      R3,#+284
+   \   00000076   0xF44F 0x72F0      MOV      R2,#+480
+   \   0000007A   0x2124             MOVS     R1,#+36
+   \   0000007C   0x2000             MOVS     R0,#+0
+   \   0000007E   0x.... 0x....      BL       WM_CreateWindow
+   \   00000082   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    200          	buttonPreHeat.btnHandle = BUTTON_CreateEx(INTERVAL_V,0,BTN_X_PIXEL, BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   00000086   0x.... 0x....      BL       alloc_win_id
+   \   0000008A   0x9003             STR      R0,[SP, #+12]
+   \   0000008C   0x2000             MOVS     R0,#+0
+   \   0000008E   0x9002             STR      R0,[SP, #+8]
+   \   00000090   0x2002             MOVS     R0,#+2
+   \   00000092   0x9001             STR      R0,[SP, #+4]
+   \   00000094   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000098   0x9000             STR      R0,[SP, #+0]
+   \   0000009A   0x238C             MOVS     R3,#+140
+   \   0000009C   0x2275             MOVS     R2,#+117
+   \   0000009E   0x2100             MOVS     R1,#+0
+   \   000000A0   0x2002             MOVS     R0,#+2
+   \   000000A2   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000000A6   0xF8A8 0x0004      STRH     R0,[R8, #+4]
+    201          	buttonMove.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,0,BTN_X_PIXEL, BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   000000AA   0x.... 0x....      BL       alloc_win_id
+   \   000000AE   0x9003             STR      R0,[SP, #+12]
+   \   000000B0   0x2000             MOVS     R0,#+0
+   \   000000B2   0x9002             STR      R0,[SP, #+8]
+   \   000000B4   0x2002             MOVS     R0,#+2
+   \   000000B6   0x9001             STR      R0,[SP, #+4]
+   \   000000B8   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000000BC   0x9000             STR      R0,[SP, #+0]
+   \   000000BE   0x238C             MOVS     R3,#+140
+   \   000000C0   0x2275             MOVS     R2,#+117
+   \   000000C2   0x2100             MOVS     R1,#+0
+   \   000000C4   0x2079             MOVS     R0,#+121
+   \   000000C6   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000000CA   0x.... 0x....      LDR.W    R1,??DataTable12_3
+   \   000000CE   0x8308             STRH     R0,[R1, #+24]
+    202          	buttonZero.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,0,BTN_X_PIXEL, BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   000000D0   0x.... 0x....      BL       alloc_win_id
+   \   000000D4   0x.... 0x....      LDR.W    R6,??DataTable12_6
+   \   000000D8   0x9003             STR      R0,[SP, #+12]
+   \   000000DA   0x2000             MOVS     R0,#+0
+   \   000000DC   0x9002             STR      R0,[SP, #+8]
+   \   000000DE   0x2002             MOVS     R0,#+2
+   \   000000E0   0x9001             STR      R0,[SP, #+4]
+   \   000000E2   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000000E6   0x9000             STR      R0,[SP, #+0]
+   \   000000E8   0x238C             MOVS     R3,#+140
+   \   000000EA   0x2275             MOVS     R2,#+117
+   \   000000EC   0x2100             MOVS     R1,#+0
+   \   000000EE   0x20F0             MOVS     R0,#+240
+   \   000000F0   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000000F4   0x8330             STRH     R0,[R6, #+24]
+    203          	buttonPrint.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   000000F6   0x.... 0x....      BL       alloc_win_id
+   \   000000FA   0xF240 0x1967      MOVW     R9,#+359
+   \   000000FE   0x9003             STR      R0,[SP, #+12]
+   \   00000100   0x2000             MOVS     R0,#+0
+   \   00000102   0x9002             STR      R0,[SP, #+8]
+   \   00000104   0x2002             MOVS     R0,#+2
+   \   00000106   0x9001             STR      R0,[SP, #+4]
+   \   00000108   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   0000010C   0x9000             STR      R0,[SP, #+0]
+   \   0000010E   0x238C             MOVS     R3,#+140
+   \   00000110   0x2275             MOVS     R2,#+117
+   \   00000112   0x2100             MOVS     R1,#+0
+   \   00000114   0x4648             MOV      R0,R9
+   \   00000116   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000011A   0xF8A8 0x001C      STRH     R0,[R8, #+28]
+    204          	buttonExtruder.btnHandle = BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   0000011E   0x.... 0x....      BL       alloc_win_id
+   \   00000122   0x9003             STR      R0,[SP, #+12]
+   \   00000124   0x2000             MOVS     R0,#+0
+   \   00000126   0x9002             STR      R0,[SP, #+8]
+   \   00000128   0x2002             MOVS     R0,#+2
+   \   0000012A   0x9001             STR      R0,[SP, #+4]
+   \   0000012C   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000130   0x9000             STR      R0,[SP, #+0]
+   \   00000132   0x238C             MOVS     R3,#+140
+   \   00000134   0x2275             MOVS     R2,#+117
+   \   00000136   0x218E             MOVS     R1,#+142
+   \   00000138   0x2002             MOVS     R0,#+2
+   \   0000013A   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000013E   0x.... 0x....      LDR.W    R1,??DataTable12_3
+   \   00000142   0x8008             STRH     R0,[R1, #+0]
+    205          	if(gCfgItems.leveling_mode != 2)
+   \   00000144   0xF894 0x00FC      LDRB     R0,[R4, #+252]
+   \   00000148   0x2802             CMP      R0,#+2
+   \   0000014A   0xD037             BEQ.N    ??draw_ready_print_1
+    206          	{
+    207          		buttonLeveling.btnHandle  = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000014C   0x.... 0x....      BL       alloc_win_id
+   \   00000150   0x9003             STR      R0,[SP, #+12]
+   \   00000152   0x2000             MOVS     R0,#+0
+   \   00000154   0x9002             STR      R0,[SP, #+8]
+   \   00000156   0x2002             MOVS     R0,#+2
+   \   00000158   0x9001             STR      R0,[SP, #+4]
+   \   0000015A   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   0000015E   0x9000             STR      R0,[SP, #+0]
+   \   00000160   0x238C             MOVS     R3,#+140
+   \   00000162   0x2275             MOVS     R2,#+117
+   \   00000164   0x218E             MOVS     R1,#+142
+   \   00000166   0x2079             MOVS     R0,#+121
+   \   00000168   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000016C   0x8328             STRH     R0,[R5, #+24]
+    208          		buttonSet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   0000016E   0x.... 0x....      BL       alloc_win_id
+   \   00000172   0x9003             STR      R0,[SP, #+12]
+   \   00000174   0x2000             MOVS     R0,#+0
+   \   00000176   0x9002             STR      R0,[SP, #+8]
+   \   00000178   0x2002             MOVS     R0,#+2
+   \   0000017A   0x9001             STR      R0,[SP, #+4]
+   \   0000017C   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000180   0x9000             STR      R0,[SP, #+0]
+   \   00000182   0x238C             MOVS     R3,#+140
+   \   00000184   0x2275             MOVS     R2,#+117
+   \   00000186   0x218E             MOVS     R1,#+142
+   \   00000188   0x20F0             MOVS     R0,#+240
+   \   0000018A   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000018E   0x8028             STRH     R0,[R5, #+0]
+    209          		if(gCfgItems.MoreItem_pic_cnt >0)
+   \   00000190   0xF894 0x00D4      LDRB     R0,[R4, #+212]
+   \   00000194   0x2800             CMP      R0,#+0
+   \   00000196   0xD037             BEQ.N    ??draw_ready_print_2
+    210          		buttonMore.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   00000198   0x.... 0x....      BL       alloc_win_id
+   \   0000019C   0x9003             STR      R0,[SP, #+12]
+   \   0000019E   0x2000             MOVS     R0,#+0
+   \   000001A0   0x9002             STR      R0,[SP, #+8]
+   \   000001A2   0x2002             MOVS     R0,#+2
+   \   000001A4   0x9001             STR      R0,[SP, #+4]
+   \   000001A6   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000001AA   0x9000             STR      R0,[SP, #+0]
+   \   000001AC   0x238C             MOVS     R3,#+140
+   \   000001AE   0x2275             MOVS     R2,#+117
+   \   000001B0   0x218E             MOVS     R1,#+142
+   \   000001B2   0x4648             MOV      R0,R9
+   \   000001B4   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001B8   0x8030             STRH     R0,[R6, #+0]
+   \   000001BA   0xE025             B.N      ??draw_ready_print_2
+    211          	}
+    212          	else
+    213          	{
+    214          		buttonSet.btnHandle  = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \                     ??draw_ready_print_1: (+1)
+   \   000001BC   0x.... 0x....      BL       alloc_win_id
+   \   000001C0   0x9003             STR      R0,[SP, #+12]
+   \   000001C2   0x2000             MOVS     R0,#+0
+   \   000001C4   0x9002             STR      R0,[SP, #+8]
+   \   000001C6   0x2002             MOVS     R0,#+2
+   \   000001C8   0x9001             STR      R0,[SP, #+4]
+   \   000001CA   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000001CE   0x9000             STR      R0,[SP, #+0]
+   \   000001D0   0x238C             MOVS     R3,#+140
+   \   000001D2   0x2275             MOVS     R2,#+117
+   \   000001D4   0x218E             MOVS     R1,#+142
+   \   000001D6   0x2079             MOVS     R0,#+121
+   \   000001D8   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001DC   0x8028             STRH     R0,[R5, #+0]
+    215          		if(gCfgItems.MoreItem_pic_cnt >0)
+   \   000001DE   0xF894 0x00D4      LDRB     R0,[R4, #+212]
+   \   000001E2   0x2800             CMP      R0,#+0
+   \   000001E4   0xD010             BEQ.N    ??draw_ready_print_2
+    216          		buttonMore.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   000001E6   0x.... 0x....      BL       alloc_win_id
+   \   000001EA   0x9003             STR      R0,[SP, #+12]
+   \   000001EC   0x2000             MOVS     R0,#+0
+   \   000001EE   0x9002             STR      R0,[SP, #+8]
+   \   000001F0   0x2002             MOVS     R0,#+2
+   \   000001F2   0x9001             STR      R0,[SP, #+4]
+   \   000001F4   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000001F8   0x9000             STR      R0,[SP, #+0]
+   \   000001FA   0x238C             MOVS     R3,#+140
+   \   000001FC   0x2275             MOVS     R2,#+117
+   \   000001FE   0x218E             MOVS     R1,#+142
+   \   00000200   0x20F0             MOVS     R0,#+240
+   \   00000202   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000206   0x8030             STRH     R0,[R6, #+0]
+    217          	}
+    218          	BUTTON_SetBmpFileName(buttonPreHeat.btnHandle, "bmp_preheat.bin",1);	
+   \                     ??draw_ready_print_2: (+1)
+   \   00000208   0x2201             MOVS     R2,#+1
+   \   0000020A   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_preheat.bin">`
+   \   0000020E   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   00000212   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    219          	BUTTON_SetBmpFileName(buttonPrint.btnHandle, "bmp_printing.bin",1);
+   \   00000216   0x2201             MOVS     R2,#+1
+   \   00000218   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_printing.bin">`
+   \   0000021C   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   00000220   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    220          	BUTTON_SetBmpFileName(buttonMove.btnHandle, "bmp_mov.bin",1);
+   \   00000224   0x2201             MOVS     R2,#+1
+   \   00000226   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_mov.bin">`
+   \   0000022A   0x.... 0x....      LDR.W    R0,??DataTable12_3
+   \   0000022E   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000232   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    221          	if(gCfgItems.MoreItem_pic_cnt >0)
+   \   00000236   0xF894 0x00D4      LDRB     R0,[R4, #+212]
+   \   0000023A   0x2800             CMP      R0,#+0
+   \   0000023C   0xD006             BEQ.N    ??draw_ready_print_3
+    222          	BUTTON_SetBmpFileName(buttonMore.btnHandle, "bmp_more.bin",1);
+   \   0000023E   0x2201             MOVS     R2,#+1
+   \   00000240   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_more.bin">`
+   \   00000244   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000248   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    223          	BUTTON_SetBmpFileName(buttonZero.btnHandle, "bmp_zero.bin",1);
+   \                     ??draw_ready_print_3: (+1)
+   \   0000024C   0x2201             MOVS     R2,#+1
+   \   0000024E   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_zero.bin">`
+   \   00000252   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000256   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    224          	//BUTTON_SetBmpFileName(buttonFan.btnHandle, "bmp_fan.bin",1);
+    225          	if(gCfgItems.leveling_mode != 2)
+   \   0000025A   0xF894 0x00FC      LDRB     R0,[R4, #+252]
+   \   0000025E   0x2802             CMP      R0,#+2
+   \   00000260   0xD010             BEQ.N    ??draw_ready_print_4
+    226          	{
+    227          		if(gCfgItems.leveling_mode == 1)
+   \   00000262   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   00000266   0xF894 0x10FC      LDRB     R1,[R4, #+252]
+   \   0000026A   0x2901             CMP      R1,#+1
+   \   0000026C   0xD105             BNE.N    ??draw_ready_print_5
+    228          		{
+    229          			BUTTON_SetBmpFileName(buttonLeveling.btnHandle, "bmp_autoleveling.bin",1);
+   \   0000026E   0x2201             MOVS     R2,#+1
+   \   00000270   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_autoleveling.bin">`
+   \   00000274   0x.... 0x....      BL       BUTTON_SetBmpFileName
+   \   00000278   0xE004             B.N      ??draw_ready_print_4
+    230          		}
+    231          		else
+    232          		{
+    233          			BUTTON_SetBmpFileName(buttonLeveling.btnHandle, "bmp_leveling.bin",1);
+   \                     ??draw_ready_print_5: (+1)
+   \   0000027A   0x2201             MOVS     R2,#+1
+   \   0000027C   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_leveling.bin">`
+   \   00000280   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    234          		}
+    235          	}
+    236          	else
+    237          	{
+    238          		//BUTTON_SetBmpFileName(buttonLeveling.btnHandle, "bmp_fan.bin",1);
+    239          	}
+    240          	
+    241          	BUTTON_SetBmpFileName(buttonExtruder.btnHandle, "bmp_extruct.bin",1);
+   \                     ??draw_ready_print_4: (+1)
+   \   00000284   0x2201             MOVS     R2,#+1
+   \   00000286   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_extruct.bin">`
+   \   0000028A   0x.... 0x....      LDR.W    R0,??DataTable12_3
+   \   0000028E   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000292   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    242          	BUTTON_SetBmpFileName(buttonSet.btnHandle, "bmp_set.bin",1);
+   \   00000296   0x2201             MOVS     R2,#+1
+   \   00000298   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_set.bin">`
+   \   0000029C   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000002A0   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    243          	
+    244          	BUTTON_SetBitmapEx(buttonPreHeat.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+   \   000002A4   0x.... 0x....      LDR.W    R9,??DataTable12_17
+   \   000002A8   0x.... 0x....      LDR.W    R10,??DataTable12_18
+   \   000002AC   0x.... 0x....      LDR.W    R11,??DataTable12_19
+   \   000002B0   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   000002B4   0x9000             STR      R0,[SP, #+0]
+   \   000002B6   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   000002BA   0x464A             MOV      R2,R9
+   \   000002BC   0x2100             MOVS     R1,#+0
+   \   000002BE   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   000002C2   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    245          	BUTTON_SetBitmapEx(buttonMove.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   000002C6   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   000002CA   0x9000             STR      R0,[SP, #+0]
+   \   000002CC   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   000002D0   0x464A             MOV      R2,R9
+   \   000002D2   0x2100             MOVS     R1,#+0
+   \   000002D4   0x.... 0x....      LDR.W    R0,??DataTable12_3
+   \   000002D8   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000002DC   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    246          	BUTTON_SetBitmapEx(buttonZero.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+   \   000002E0   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   000002E4   0x9000             STR      R0,[SP, #+0]
+   \   000002E6   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   000002EA   0x464A             MOV      R2,R9
+   \   000002EC   0x2100             MOVS     R1,#+0
+   \   000002EE   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   000002F2   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    247          	BUTTON_SetBitmapEx(buttonPrint.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   000002F6   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   000002FA   0x9000             STR      R0,[SP, #+0]
+   \   000002FC   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   00000300   0x464A             MOV      R2,R9
+   \   00000302   0x2100             MOVS     R1,#+0
+   \   00000304   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   00000308   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    248          	BUTTON_SetBitmapEx(buttonLeveling.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+   \   0000030C   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   00000310   0x9000             STR      R0,[SP, #+0]
+   \   00000312   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   00000316   0x464A             MOV      R2,R9
+   \   00000318   0x2100             MOVS     R1,#+0
+   \   0000031A   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   0000031E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    249          	BUTTON_SetBitmapEx(buttonExtruder.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   00000322   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   00000326   0x9000             STR      R0,[SP, #+0]
+   \   00000328   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   0000032C   0x464A             MOV      R2,R9
+   \   0000032E   0x2100             MOVS     R1,#+0
+   \   00000330   0x.... 0x....      LDR.W    R0,??DataTable12_3
+   \   00000334   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000338   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    250          	BUTTON_SetBitmapEx(buttonSet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   0000033C   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   00000340   0x9000             STR      R0,[SP, #+0]
+   \   00000342   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   00000346   0x464A             MOV      R2,R9
+   \   00000348   0x2100             MOVS     R1,#+0
+   \   0000034A   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   0000034E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    251          	if(gCfgItems.MoreItem_pic_cnt >0)
+   \   00000352   0xF894 0x00D4      LDRB     R0,[R4, #+212]
+   \   00000356   0x2800             CMP      R0,#+0
+   \   00000358   0xD00A             BEQ.N    ??draw_ready_print_6
+    252          	BUTTON_SetBitmapEx(buttonMore.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   0000035A   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   0000035E   0x9000             STR      R0,[SP, #+0]
+   \   00000360   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   00000364   0x464A             MOV      R2,R9
+   \   00000366   0x2100             MOVS     R1,#+0
+   \   00000368   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   0000036C   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    253          	
+    254          	BUTTON_SetBkColor(buttonPreHeat.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \                     ??draw_ready_print_6: (+1)
+   \   00000370   0x6A3A             LDR      R2,[R7, #+32]
+   \   00000372   0x2101             MOVS     R1,#+1
+   \   00000374   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   00000378   0x.... 0x....      BL       BUTTON_SetBkColor
+    255          	BUTTON_SetBkColor(buttonPreHeat.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   0000037C   0x6A3A             LDR      R2,[R7, #+32]
+   \   0000037E   0x2100             MOVS     R1,#+0
+   \   00000380   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   00000384   0x.... 0x....      BL       BUTTON_SetBkColor
+    256          	BUTTON_SetTextColor(buttonPreHeat.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   00000388   0x6A7A             LDR      R2,[R7, #+36]
+   \   0000038A   0x2101             MOVS     R1,#+1
+   \   0000038C   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   00000390   0x.... 0x....      BL       BUTTON_SetTextColor
+    257          	BUTTON_SetTextColor(buttonPreHeat.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   00000394   0x6A7A             LDR      R2,[R7, #+36]
+   \   00000396   0x2100             MOVS     R1,#+0
+   \   00000398   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   0000039C   0x.... 0x....      BL       BUTTON_SetTextColor
+    258          	
+    259          	BUTTON_SetBkColor(buttonPrint.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000003A0   0x6A3A             LDR      R2,[R7, #+32]
+   \   000003A2   0x2101             MOVS     R1,#+1
+   \   000003A4   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   000003A8   0x.... 0x....      BL       BUTTON_SetBkColor
+    260          	BUTTON_SetBkColor(buttonPrint.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000003AC   0x6A3A             LDR      R2,[R7, #+32]
+   \   000003AE   0x2100             MOVS     R1,#+0
+   \   000003B0   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   000003B4   0x.... 0x....      BL       BUTTON_SetBkColor
+    261          	BUTTON_SetTextColor(buttonPrint.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000003B8   0x6A7A             LDR      R2,[R7, #+36]
+   \   000003BA   0x2101             MOVS     R1,#+1
+   \   000003BC   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   000003C0   0x.... 0x....      BL       BUTTON_SetTextColor
+    262          	BUTTON_SetTextColor(buttonPrint.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000003C4   0x6A7A             LDR      R2,[R7, #+36]
+   \   000003C6   0x2100             MOVS     R1,#+0
+   \   000003C8   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   000003CC   0x.... 0x....      BL       BUTTON_SetTextColor
+    263          
+    264          	BUTTON_SetBkColor(buttonMove.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000003D0   0x6A3A             LDR      R2,[R7, #+32]
+   \   000003D2   0x2101             MOVS     R1,#+1
+   \   000003D4   0x....             LDR.N    R0,??DataTable12_3
+   \   000003D6   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000003DA   0x.... 0x....      BL       BUTTON_SetBkColor
+    265          	BUTTON_SetBkColor(buttonMove.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000003DE   0x6A3A             LDR      R2,[R7, #+32]
+   \   000003E0   0x2100             MOVS     R1,#+0
+   \   000003E2   0x....             LDR.N    R0,??DataTable12_3
+   \   000003E4   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000003E8   0x.... 0x....      BL       BUTTON_SetBkColor
+    266          	BUTTON_SetTextColor(buttonMove.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000003EC   0x6A7A             LDR      R2,[R7, #+36]
+   \   000003EE   0x2101             MOVS     R1,#+1
+   \   000003F0   0x....             LDR.N    R0,??DataTable12_3
+   \   000003F2   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000003F6   0x.... 0x....      BL       BUTTON_SetTextColor
+    267          	BUTTON_SetTextColor(buttonMove.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000003FA   0x6A7A             LDR      R2,[R7, #+36]
+   \   000003FC   0x2100             MOVS     R1,#+0
+   \   000003FE   0x....             LDR.N    R0,??DataTable12_3
+   \   00000400   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000404   0x.... 0x....      BL       BUTTON_SetTextColor
+    268          	if(gCfgItems.MoreItem_pic_cnt >0){
+   \   00000408   0xF894 0x00D4      LDRB     R0,[R4, #+212]
+   \   0000040C   0x2800             CMP      R0,#+0
+   \   0000040E   0xD017             BEQ.N    ??draw_ready_print_7
+    269          	BUTTON_SetBkColor(buttonMore.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   00000410   0x6A3A             LDR      R2,[R7, #+32]
+   \   00000412   0x2101             MOVS     R1,#+1
+   \   00000414   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000418   0x.... 0x....      BL       BUTTON_SetBkColor
+    270          	BUTTON_SetBkColor(buttonMore.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   0000041C   0x6A3A             LDR      R2,[R7, #+32]
+   \   0000041E   0x2100             MOVS     R1,#+0
+   \   00000420   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000424   0x.... 0x....      BL       BUTTON_SetBkColor
+    271          	BUTTON_SetTextColor(buttonMore.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   00000428   0x6A7A             LDR      R2,[R7, #+36]
+   \   0000042A   0x2101             MOVS     R1,#+1
+   \   0000042C   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000430   0x.... 0x....      BL       BUTTON_SetTextColor
+    272          	BUTTON_SetTextColor(buttonMore.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   00000434   0x6A7A             LDR      R2,[R7, #+36]
+   \   00000436   0x2100             MOVS     R1,#+0
+   \   00000438   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   0000043C   0x.... 0x....      BL       BUTTON_SetTextColor
+    273          	}
+    274          	BUTTON_SetBkColor(buttonZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \                     ??draw_ready_print_7: (+1)
+   \   00000440   0x6A3A             LDR      R2,[R7, #+32]
+   \   00000442   0x2101             MOVS     R1,#+1
+   \   00000444   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000448   0x.... 0x....      BL       BUTTON_SetBkColor
+    275          	BUTTON_SetBkColor(buttonZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   0000044C   0x6A3A             LDR      R2,[R7, #+32]
+   \   0000044E   0x2100             MOVS     R1,#+0
+   \   00000450   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000454   0x.... 0x....      BL       BUTTON_SetBkColor
+    276          	BUTTON_SetTextColor(buttonZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   00000458   0x6A7A             LDR      R2,[R7, #+36]
+   \   0000045A   0x2101             MOVS     R1,#+1
+   \   0000045C   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000460   0x.... 0x....      BL       BUTTON_SetTextColor
+    277          	BUTTON_SetTextColor(buttonZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   00000464   0x6A7A             LDR      R2,[R7, #+36]
+   \   00000466   0x2100             MOVS     R1,#+0
+   \   00000468   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   0000046C   0x.... 0x....      BL       BUTTON_SetTextColor
+    278          
+    279          	BUTTON_SetBkColor(buttonLeveling.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   00000470   0x6A3A             LDR      R2,[R7, #+32]
+   \   00000472   0x2101             MOVS     R1,#+1
+   \   00000474   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   00000478   0x.... 0x....      BL       BUTTON_SetBkColor
+    280          	BUTTON_SetBkColor(buttonLeveling.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   0000047C   0x6A3A             LDR      R2,[R7, #+32]
+   \   0000047E   0x2100             MOVS     R1,#+0
+   \   00000480   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   00000484   0x.... 0x....      BL       BUTTON_SetBkColor
+    281          	BUTTON_SetTextColor(buttonLeveling.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   00000488   0x6A7A             LDR      R2,[R7, #+36]
+   \   0000048A   0x2101             MOVS     R1,#+1
+   \   0000048C   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   00000490   0x.... 0x....      BL       BUTTON_SetTextColor
+    282          	BUTTON_SetTextColor(buttonLeveling.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   00000494   0x6A7A             LDR      R2,[R7, #+36]
+   \   00000496   0x2100             MOVS     R1,#+0
+   \   00000498   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   0000049C   0x.... 0x....      BL       BUTTON_SetTextColor
+    283          
+    284          	BUTTON_SetBkColor(buttonExtruder.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000004A0   0x6A3A             LDR      R2,[R7, #+32]
+   \   000004A2   0x2101             MOVS     R1,#+1
+   \   000004A4   0x....             LDR.N    R0,??DataTable12_3
+   \   000004A6   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000004AA   0x.... 0x....      BL       BUTTON_SetBkColor
+    285          	BUTTON_SetBkColor(buttonExtruder.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000004AE   0x6A3A             LDR      R2,[R7, #+32]
+   \   000004B0   0x2100             MOVS     R1,#+0
+   \   000004B2   0x....             LDR.N    R0,??DataTable12_3
+   \   000004B4   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000004B8   0x.... 0x....      BL       BUTTON_SetBkColor
+    286          	BUTTON_SetTextColor(buttonExtruder.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000004BC   0x6A7A             LDR      R2,[R7, #+36]
+   \   000004BE   0x2101             MOVS     R1,#+1
+   \   000004C0   0x....             LDR.N    R0,??DataTable12_3
+   \   000004C2   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000004C6   0x.... 0x....      BL       BUTTON_SetTextColor
+    287          	BUTTON_SetTextColor(buttonExtruder.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000004CA   0x6A7A             LDR      R2,[R7, #+36]
+   \   000004CC   0x2100             MOVS     R1,#+0
+   \   000004CE   0x....             LDR.N    R0,??DataTable12_3
+   \   000004D0   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000004D4   0x.... 0x....      BL       BUTTON_SetTextColor
+    288          
+    289          	BUTTON_SetBkColor(buttonSet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000004D8   0x6A3A             LDR      R2,[R7, #+32]
+   \   000004DA   0x2101             MOVS     R1,#+1
+   \   000004DC   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000004E0   0x.... 0x....      BL       BUTTON_SetBkColor
+    290          	BUTTON_SetBkColor(buttonSet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000004E4   0x6A3A             LDR      R2,[R7, #+32]
+   \   000004E6   0x2100             MOVS     R1,#+0
+   \   000004E8   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000004EC   0x.... 0x....      BL       BUTTON_SetBkColor
+    291          	BUTTON_SetTextColor(buttonSet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000004F0   0x6A7A             LDR      R2,[R7, #+36]
+   \   000004F2   0x2101             MOVS     R1,#+1
+   \   000004F4   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000004F8   0x.... 0x....      BL       BUTTON_SetTextColor
+    292          	BUTTON_SetTextColor(buttonSet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000004FC   0x6A7A             LDR      R2,[R7, #+36]
+   \   000004FE   0x2100             MOVS     R1,#+0
+   \   00000500   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   00000504   0x.... 0x....      BL       BUTTON_SetTextColor
+    293          
+    294          	if(gCfgItems.multiple_language !=0)
+   \   00000508   0xF894 0x01BF      LDRB     R0,[R4, #+447]
+   \   0000050C   0x2800             CMP      R0,#+0
+   \   0000050E   0xF000 0x811F      BEQ.W    ??draw_ready_print_8
+    295          	{   
+    296          		BUTTON_SetText(buttonPreHeat.btnHandle, main_menu.preheat);
+   \   00000512   0x....             LDR.N    R7,??DataTable12_20
+   \   00000514   0x6879             LDR      R1,[R7, #+4]
+   \   00000516   0xF9B8 0x0004      LDRSH    R0,[R8, #+4]
+   \   0000051A   0x.... 0x....      BL       BUTTON_SetText
+    297          		BUTTON_SetText(buttonMove.btnHandle, main_menu.move);
+   \   0000051E   0x68B9             LDR      R1,[R7, #+8]
+   \   00000520   0x....             LDR.N    R0,??DataTable12_3
+   \   00000522   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000526   0x.... 0x....      BL       BUTTON_SetText
+    298          		BUTTON_SetText(buttonZero.btnHandle, main_menu.home);
+   \   0000052A   0x68F9             LDR      R1,[R7, #+12]
+   \   0000052C   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000530   0x.... 0x....      BL       BUTTON_SetText
+    299          		BUTTON_SetText(buttonPrint.btnHandle, main_menu.print);
+   \   00000534   0x6939             LDR      R1,[R7, #+16]
+   \   00000536   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   0000053A   0x.... 0x....      BL       BUTTON_SetText
+    300          		BUTTON_SetText(buttonExtruder.btnHandle, main_menu.extrude);
+   \   0000053E   0x6979             LDR      R1,[R7, #+20]
+   \   00000540   0x....             LDR.N    R0,??DataTable12_3
+   \   00000542   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000546   0x.... 0x....      BL       BUTTON_SetText
+    301          		if(gCfgItems.leveling_mode !=2)
+   \   0000054A   0xF894 0x00FC      LDRB     R0,[R4, #+252]
+   \   0000054E   0x2802             CMP      R0,#+2
+   \   00000550   0xD00C             BEQ.N    ??draw_ready_print_9
+    302          		{
+    303          			if(gCfgItems.leveling_mode == 1)
+   \   00000552   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   00000556   0xF894 0x10FC      LDRB     R1,[R4, #+252]
+   \   0000055A   0x2901             CMP      R1,#+1
+   \   0000055C   0xD103             BNE.N    ??draw_ready_print_10
+    304          			{	
+    305          				BUTTON_SetText(buttonLeveling.btnHandle, main_menu.autoleveling);
+   \   0000055E   0x69F9             LDR      R1,[R7, #+28]
+   \   00000560   0x.... 0x....      BL       BUTTON_SetText
+   \   00000564   0xE002             B.N      ??draw_ready_print_9
+    306          			}
+    307          			else
+    308          			{
+    309          				BUTTON_SetText(buttonLeveling.btnHandle, main_menu.leveling);
+   \                     ??draw_ready_print_10: (+1)
+   \   00000566   0x69B9             LDR      R1,[R7, #+24]
+   \   00000568   0x.... 0x....      BL       BUTTON_SetText
+    310          			}
+    311          		}
+    312          		else
+    313          		{
+    314          			//BUTTON_SetText(buttonLeveling.btnHandle, main_menu.fan);
+    315          		}
+    316          		BUTTON_SetText(buttonSet.btnHandle, main_menu.set);
+   \                     ??draw_ready_print_9: (+1)
+   \   0000056C   0x6A79             LDR      R1,[R7, #+36]
+   \   0000056E   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   00000572   0x.... 0x....      BL       BUTTON_SetText
+    317          		if(gCfgItems.MoreItem_pic_cnt >0)
+   \   00000576   0xF894 0x00D4      LDRB     R0,[R4, #+212]
+   \   0000057A   0x2800             CMP      R0,#+0
+   \   0000057C   0xF000 0x80E8      BEQ.W    ??draw_ready_print_8
+    318          		BUTTON_SetText(buttonMore.btnHandle, main_menu.more);
+   \   00000580   0x6AF9             LDR      R1,[R7, #+44]
+   \   00000582   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000586   0xB005             ADD      SP,SP,#+20
+   \   00000588   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \   0000058C   0x.... 0x....      B.W      BUTTON_SetText
+    319          	}
+    320          	}
+    321          	else
+    322          	{
+    323          		hReadyPrintWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbReadPrintWin, 0);
+   \                     ??draw_ready_print_0: (+1)
+   \   00000590   0x2000             MOVS     R0,#+0
+   \   00000592   0x9002             STR      R0,[SP, #+8]
+   \   00000594   0x9601             STR      R6,[SP, #+4]
+   \   00000596   0x2002             MOVS     R0,#+2
+   \   00000598   0x9000             STR      R0,[SP, #+0]
+   \   0000059A   0xF44F 0x738E      MOV      R3,#+284
+   \   0000059E   0xF44F 0x72F0      MOV      R2,#+480
+   \   000005A2   0x2124             MOVS     R1,#+36
+   \   000005A4   0x2000             MOVS     R0,#+0
+   \   000005A6   0x.... 0x....      BL       WM_CreateWindow
+   \   000005AA   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    324          		buttonTool.btnHandle = BUTTON_CreateEx(SIMPLE_FIRST_PAGE_GRAP+1,(LCD_HEIGHT-BTN_Y_PIXEL)/2-titleHeight,BTN_X_PIXEL,BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   000005AE   0x.... 0x....      BL       alloc_win_id
+   \   000005B2   0x....             LDR.N    R6,??DataTable12_8
+   \   000005B4   0x9003             STR      R0,[SP, #+12]
+   \   000005B6   0x2000             MOVS     R0,#+0
+   \   000005B8   0x9002             STR      R0,[SP, #+8]
+   \   000005BA   0x2002             MOVS     R0,#+2
+   \   000005BC   0x9001             STR      R0,[SP, #+4]
+   \   000005BE   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000005C2   0x9000             STR      R0,[SP, #+0]
+   \   000005C4   0x238C             MOVS     R3,#+140
+   \   000005C6   0x2275             MOVS     R2,#+117
+   \   000005C8   0x2136             MOVS     R1,#+54
+   \   000005CA   0x2016             MOVS     R0,#+22
+   \   000005CC   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000005D0   0x8030             STRH     R0,[R6, #+0]
+    325          		buttonSet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+SIMPLE_FIRST_PAGE_GRAP*2+1,(LCD_HEIGHT-BTN_Y_PIXEL)/2-titleHeight,BTN_X_PIXEL,BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+   \   000005D2   0x.... 0x....      BL       alloc_win_id
+   \   000005D6   0x9003             STR      R0,[SP, #+12]
+   \   000005D8   0x2000             MOVS     R0,#+0
+   \   000005DA   0x9002             STR      R0,[SP, #+8]
+   \   000005DC   0x2002             MOVS     R0,#+2
+   \   000005DE   0x9001             STR      R0,[SP, #+4]
+   \   000005E0   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000005E4   0x9000             STR      R0,[SP, #+0]
+   \   000005E6   0x238C             MOVS     R3,#+140
+   \   000005E8   0x2275             MOVS     R2,#+117
+   \   000005EA   0x2136             MOVS     R1,#+54
+   \   000005EC   0x20A0             MOVS     R0,#+160
+   \   000005EE   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000005F2   0x8028             STRH     R0,[R5, #+0]
+    326          		buttonPrint.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+SIMPLE_FIRST_PAGE_GRAP*3+1,(LCD_HEIGHT-BTN_Y_PIXEL)/2-titleHeight,BTN_X_PIXEL,BTN_Y_PIXEL,hReadyPrintWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());		
+   \   000005F4   0x.... 0x....      BL       alloc_win_id
+   \   000005F8   0x9003             STR      R0,[SP, #+12]
+   \   000005FA   0x2000             MOVS     R0,#+0
+   \   000005FC   0x9002             STR      R0,[SP, #+8]
+   \   000005FE   0x2002             MOVS     R0,#+2
+   \   00000600   0x9001             STR      R0,[SP, #+4]
+   \   00000602   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000606   0x9000             STR      R0,[SP, #+0]
+   \   00000608   0x238C             MOVS     R3,#+140
+   \   0000060A   0x2275             MOVS     R2,#+117
+   \   0000060C   0x2136             MOVS     R1,#+54
+   \   0000060E   0xF44F 0x7095      MOV      R0,#+298
+   \   00000612   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000616   0xF8A8 0x001C      STRH     R0,[R8, #+28]
+    327          
+    328          		BUTTON_SetBmpFileName(buttonTool.btnHandle,"bmp_tool.bin",1);
+   \   0000061A   0x2201             MOVS     R2,#+1
+   \   0000061C   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_tool.bin">`
+   \   00000620   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000624   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    329          		BUTTON_SetBmpFileName(buttonSet.btnHandle,"bmp_set.bin",1);
+   \   00000628   0x2201             MOVS     R2,#+1
+   \   0000062A   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_set.bin">`
+   \   0000062E   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   00000632   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    330          		BUTTON_SetBmpFileName(buttonPrint.btnHandle,"bmp_printing.bin",1);
+   \   00000636   0x2201             MOVS     R2,#+1
+   \   00000638   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_printing.bin">`
+   \   0000063C   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   00000640   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    331          
+    332          		BUTTON_SetBitmapEx(buttonTool.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   00000644   0x.... 0x....      LDR.W    R9,??DataTable12_17
+   \   00000648   0x.... 0x....      LDR.W    R10,??DataTable12_18
+   \   0000064C   0x.... 0x....      LDR.W    R11,??DataTable12_19
+   \   00000650   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   00000654   0x9000             STR      R0,[SP, #+0]
+   \   00000656   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   0000065A   0x464A             MOV      R2,R9
+   \   0000065C   0x2100             MOVS     R1,#+0
+   \   0000065E   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000662   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    333          		BUTTON_SetBitmapEx(buttonSet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   00000666   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   0000066A   0x9000             STR      R0,[SP, #+0]
+   \   0000066C   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   00000670   0x464A             MOV      R2,R9
+   \   00000672   0x2100             MOVS     R1,#+0
+   \   00000674   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   00000678   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    334          		BUTTON_SetBitmapEx(buttonPrint.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);	
+   \   0000067C   0xF99B 0x0000      LDRSB    R0,[R11, #+0]
+   \   00000680   0x9000             STR      R0,[SP, #+0]
+   \   00000682   0xF99A 0x3000      LDRSB    R3,[R10, #+0]
+   \   00000686   0x464A             MOV      R2,R9
+   \   00000688   0x2100             MOVS     R1,#+0
+   \   0000068A   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   0000068E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    335          
+    336          		BUTTON_SetBkColor(buttonTool.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   00000692   0x6A3A             LDR      R2,[R7, #+32]
+   \   00000694   0x2101             MOVS     R1,#+1
+   \   00000696   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   0000069A   0x.... 0x....      BL       BUTTON_SetBkColor
+    337          		BUTTON_SetBkColor(buttonTool.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   0000069E   0x6A3A             LDR      R2,[R7, #+32]
+   \   000006A0   0x2100             MOVS     R1,#+0
+   \   000006A2   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   000006A6   0x.... 0x....      BL       BUTTON_SetBkColor
+    338          		BUTTON_SetTextColor(buttonTool.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000006AA   0x6A7A             LDR      R2,[R7, #+36]
+   \   000006AC   0x2101             MOVS     R1,#+1
+   \   000006AE   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   000006B2   0x.... 0x....      BL       BUTTON_SetTextColor
+    339          		BUTTON_SetTextColor(buttonTool.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000006B6   0x6A7A             LDR      R2,[R7, #+36]
+   \   000006B8   0x2100             MOVS     R1,#+0
+   \   000006BA   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   000006BE   0x.... 0x....      BL       BUTTON_SetTextColor
+    340          
+    341          		BUTTON_SetBkColor(buttonSet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000006C2   0x6A3A             LDR      R2,[R7, #+32]
+   \   000006C4   0x2101             MOVS     R1,#+1
+   \   000006C6   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000006CA   0x.... 0x....      BL       BUTTON_SetBkColor
+    342          		BUTTON_SetBkColor(buttonSet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000006CE   0x6A3A             LDR      R2,[R7, #+32]
+   \   000006D0   0x2100             MOVS     R1,#+0
+   \   000006D2   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000006D6   0x.... 0x....      BL       BUTTON_SetBkColor
+    343          		BUTTON_SetTextColor(buttonSet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000006DA   0x6A7A             LDR      R2,[R7, #+36]
+   \   000006DC   0x2101             MOVS     R1,#+1
+   \   000006DE   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000006E2   0x.... 0x....      BL       BUTTON_SetTextColor
+    344          		BUTTON_SetTextColor(buttonSet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000006E6   0x6A7A             LDR      R2,[R7, #+36]
+   \   000006E8   0x2100             MOVS     R1,#+0
+   \   000006EA   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000006EE   0x.... 0x....      BL       BUTTON_SetTextColor
+    345          
+    346          		BUTTON_SetBkColor(buttonPrint.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000006F2   0x6A3A             LDR      R2,[R7, #+32]
+   \   000006F4   0x2101             MOVS     R1,#+1
+   \   000006F6   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   000006FA   0x.... 0x....      BL       BUTTON_SetBkColor
+    347          		BUTTON_SetBkColor(buttonPrint.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000006FE   0x6A3A             LDR      R2,[R7, #+32]
+   \   00000700   0x2100             MOVS     R1,#+0
+   \   00000702   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   00000706   0x.... 0x....      BL       BUTTON_SetBkColor
+    348          		BUTTON_SetTextColor(buttonPrint.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   0000070A   0x6A7A             LDR      R2,[R7, #+36]
+   \   0000070C   0x2101             MOVS     R1,#+1
+   \   0000070E   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   00000712   0x.... 0x....      BL       BUTTON_SetTextColor
+    349          		BUTTON_SetTextColor(buttonPrint.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   00000716   0x6A7A             LDR      R2,[R7, #+36]
+   \   00000718   0x2100             MOVS     R1,#+0
+   \   0000071A   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   0000071E   0x.... 0x....      BL       BUTTON_SetTextColor
+    350          
+    351          		if(gCfgItems.multiple_language !=0)
+   \   00000722   0xF894 0x01BF      LDRB     R0,[R4, #+447]
+   \   00000726   0x2800             CMP      R0,#+0
+   \   00000728   0xD012             BEQ.N    ??draw_ready_print_8
+    352          		{
+    353          			BUTTON_SetText(buttonTool.btnHandle, main_menu.tool);
+   \   0000072A   0x....             LDR.N    R7,??DataTable12_20
+   \   0000072C   0x6AB9             LDR      R1,[R7, #+40]
+   \   0000072E   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000732   0x.... 0x....      BL       BUTTON_SetText
+    354          			BUTTON_SetText(buttonSet.btnHandle, main_menu.set);
+   \   00000736   0x6A79             LDR      R1,[R7, #+36]
+   \   00000738   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   0000073C   0x.... 0x....      BL       BUTTON_SetText
+    355          			BUTTON_SetText(buttonPrint.btnHandle, main_menu.print);
+   \   00000740   0x6939             LDR      R1,[R7, #+16]
+   \   00000742   0xF9B8 0x001C      LDRSH    R0,[R8, #+28]
+   \   00000746   0xB005             ADD      SP,SP,#+20
+   \   00000748   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \   0000074C   0x.... 0x....      B.W      BUTTON_SetText
+    356          		}
+    357          
+    358          	}
+    359          }
+   \                     ??draw_ready_print_8: (+1)
+   \   00000750   0xB005             ADD      SP,SP,#+20
+   \   00000752   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    360          
+
+   \                                 In section .text, align 2, keep-with-next
+    361          void Clear_ready_print()
+    362          {
+   \                     Clear_ready_print: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    363          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000002   0x....             LDR.N    R0,??DataTable12_4
+   \   00000004   0x6840             LDR      R0,[R0, #+4]
+   \   00000006   0x.... 0x....      BL       GUI_SetBkColor
+    364          	if(WM_IsWindow(hReadyPrintWnd))
+   \   0000000A   0x....             LDR.N    R4,??DataTable12
+   \   0000000C   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   00000010   0x.... 0x....      BL       WM_IsWindow
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD005             BEQ.N    ??Clear_ready_print_0
+    365          	{
+    366          		WM_DeleteWindow(hReadyPrintWnd);
+   \   00000018   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   0000001C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000020   0x.... 0x....      B.W      WM_DeleteWindow
+    367          		//GUI_Exec();
+    368          	}
+    369          	
+    370          	//GUI_Clear();
+    371          }
+   \                     ??Clear_ready_print_0: (+1)
+   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \   00000000   0x........         DC32     hReadyPrintWnd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \   00000000   0x........         DC32     disp_in_file_dir
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_2:
+   \   00000000   0x........         DC32     last_disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_3:
+   \   00000000   0x........         DC32     buttonExtruder
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_4:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_5:
+   \   00000000   0x........         DC32     feedrate_mm_s
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_6:
+   \   00000000   0x........         DC32     buttonMore
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_7:
+   \   00000000   0x........         DC32     buttonSet
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_8:
+   \   00000000   0x........         DC32     buttonTool
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_9:
+   \   00000000   0x........         DC32     mksCfg
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_10:
+   \   00000000   0x........         DC32     cmd_code
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_11:
+   \   00000000   0x........         DC32     codebufpoint
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_12:
+   \   00000000   0x........         DC32     leveling_first_time
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_13:
+   \   00000000   0x........         DC32     disp_state_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_14:
+   \   00000000   0x........         DC32     disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_15:
+   \   00000000   0x........         DC32     GUI_FontHZ_fontHz14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_16:
+   \   00000000   0x........         DC32     _Z14cbReadPrintWinP10WM_MESSAGE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_17:
+   \   00000000   0x........         DC32     bmp_struct
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_18:
+   \   00000000   0x........         DC32     BMP_PIC_X
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_19:
+   \   00000000   0x........         DC32     BMP_PIC_Y
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_20:
+   \   00000000   0x........         DC32     main_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_preheat.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_preheat.bin"
+   \              0x70 0x5F    
+   \              0x70 0x72    
+   \              0x65 0x68    
+   \              0x65 0x61    
+   \              0x74 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_printing.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_printing.bin"
+   \              0x70 0x5F    
+   \              0x70 0x72    
+   \              0x69 0x6E    
+   \              0x74 0x69    
+   \              0x6E 0x67    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_mov.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_mov.bin"
+   \              0x70 0x5F    
+   \              0x6D 0x6F    
+   \              0x76 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_more.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_more.bin"
+   \              0x70 0x5F    
+   \              0x6D 0x6F    
+   \              0x72 0x65    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_zero.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_zero.bin"
+   \              0x70 0x5F    
+   \              0x7A 0x65    
+   \              0x72 0x6F    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_autoleveling.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_autoleveling.bin"
+   \              0x70 0x5F    
+   \              0x61 0x75    
+   \              0x74 0x6F    
+   \              0x6C 0x65    
+   \              0x76 0x65    
+   \              0x6C 0x69    
+   \              0x6E 0x67    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000015   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_leveling.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_leveling.bin"
+   \              0x70 0x5F    
+   \              0x6C 0x65    
+   \              0x76 0x65    
+   \              0x6C 0x69    
+   \              0x6E 0x67    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_extruct.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_extruct.bin"
+   \              0x70 0x5F    
+   \              0x65 0x78    
+   \              0x74 0x72    
+   \              0x75 0x63    
+   \              0x74 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_set.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_set.bin"
+   \              0x70 0x5F    
+   \              0x73 0x65    
+   \              0x74 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_tool.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_tool.bin"
+   \              0x70 0x5F    
+   \              0x74 0x6F    
+   \              0x6F 0x6C    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    372          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Clear_ready_print
+         8   -> GUI_SetBkColor
+         0   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+       8   cbReadPrintWin(WM_MESSAGE *)
+         8   -> Clear_ready_print
+         8   -> SPI_FLASH_BufferRead
+         0   -> WM_DefaultProc
+         8   -> __aeabi_f2iz
+         0   -> draw_More
+         0   -> draw_Set
+         0   -> draw_Zero
+         0   -> draw_extrusion
+         0   -> draw_leveling
+         0   -> draw_meshleveling
+         0   -> draw_move_motor
+         0   -> draw_preHeat
+         0   -> draw_print_file
+         0   -> draw_tool()
+      56   draw_ready_print
+        56   -> BUTTON_CreateEx
+        56   -> BUTTON_SetBitmapEx
+        56   -> BUTTON_SetBkColor
+        56   -> BUTTON_SetBmpFileName
+         0   -> BUTTON_SetText
+        56   -> BUTTON_SetText
+        56   -> BUTTON_SetTextColor
+        56   -> GUI_Clear
+        56   -> GUI_DispStringAt
+        56   -> GUI_SetBkColor
+        56   -> GUI_SetColor
+        56   -> GUI_SetFont
+        56   -> WM_CreateWindow
+        56   -> alloc_win_id
+        56   -> creat_title_text
+        56   -> memset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      24  ?<Constant "bmp_autoleveling.bin">
+      16  ?<Constant "bmp_extruct.bin">
+      20  ?<Constant "bmp_leveling.bin">
+      16  ?<Constant "bmp_more.bin">
+      12  ?<Constant "bmp_mov.bin">
+      16  ?<Constant "bmp_preheat.bin">
+      20  ?<Constant "bmp_printing.bin">
+      12  ?<Constant "bmp_set.bin">
+      16  ?<Constant "bmp_tool.bin">
+      16  ?<Constant "bmp_zero.bin">
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable12_10
+       4  ??DataTable12_11
+       4  ??DataTable12_12
+       4  ??DataTable12_13
+       4  ??DataTable12_14
+       4  ??DataTable12_15
+       4  ??DataTable12_16
+       4  ??DataTable12_17
+       4  ??DataTable12_18
+       4  ??DataTable12_19
+       4  ??DataTable12_2
+       4  ??DataTable12_20
+       4  ??DataTable12_3
+       4  ??DataTable12_4
+       4  ??DataTable12_5
+       4  ??DataTable12_6
+       4  ??DataTable12_7
+       4  ??DataTable12_8
+       4  ??DataTable12_9
+      38  Clear_ready_print
+       4  X_ADD
+       4  X_INTERVAL
+      20  bmp_test_struct
+      48  buttonExtruder
+          buttonMove
+      48  buttonMore
+          buttonZero
+      48  buttonSet
+          buttonLeveling
+      24  buttonTool
+     416  cbReadPrintWin(WM_MESSAGE *)
+    1878  draw_ready_print
+      52  hReadyPrintWnd
+          buttonPreHeat
+          buttonPrint
+       1  -- Other
+
+ 
+   220 bytes in section .bss
+    28 bytes in section .data
+     1 byte  in section .rodata
+ 2 584 bytes in section .text
+ 
+ 2 584 bytes of CODE  memory
+     0 bytes of CONST memory (+ 1 byte shared)
+   248 bytes of DATA  memory
+
+Errors: none
+Warnings: 39

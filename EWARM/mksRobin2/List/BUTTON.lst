@@ -1,0 +1,1288 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        25/Feb/2020  16:59:03
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\Middlewares\Ucgui\GUI\Widget\BUTTON.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\Middlewares\Ucgui\GUI\Widget\BUTTON.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM\mksRobin2/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM\mksRobin2/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/ConvertColor\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/ConvertMono\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/Core\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/Font\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/AntiAlias\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/GUIDemo\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/LCDDriver\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/MemDev\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/MultiLayer\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/Widget\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI/WM\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/GUI_X\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../Middlewares/Ucgui/Config\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM\mksRobin2/List\BUTTON.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\EWARM\mksRobin2/Obj\BUTTON.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\Middlewares\Ucgui\GUI\Widget\BUTTON.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              ÂµC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : BUTTON.c
+     16          Purpose     : Implementation of button widget
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include <stdlib.h>
+     21          #include <string.h>
+     22          #include "BUTTON_Private.h"
+     23          
+     24          //#include "Printer.h"
+     25          #include "mks_cfg.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_N
+          ano_code\EWARM/../Middlewares/Third_Party/Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano_tft35_¼ÎºÌÈýÎ¬\mksRobin_Nano_code\Inc\mks_cfg.h",609  Warning[Pe083]: 
+          type qualifier specified more than once
+     26          
+     27          #include "pic.h"
+     28          
+     29          
+     30          #if GUI_WINSUPPORT
+     31          
+     32          extern uint8_t disp_in_file_dir;
+     33          extern uint8_t little_image_flag;
+     34          #if 0
+     35          #include "mks_fastio.h"
+     36          
+     37          extern uint8_t btn_flg;
+     38          extern uint32_t btn_beep_cnt;
+     39          
+     40          extern void btn_beeper(uint32_t beeper);
+     41          void btn_beeper(uint32_t beeper)
+     42          {
+     43              btn_flg = 1;
+     44              btn_beep_cnt = beeper;
+     45              BEEPER_OP = 1;
+     46          }
+     47          #endif
+     48          /*********************************************************************
+     49          *
+     50          *       Private config defaults
+     51          *
+     52          **********************************************************************
+     53          */
+     54          
+     55          /* Define default fonts */
+     56          #ifndef   BUTTON_FONT_DEFAULT
+     57            #define BUTTON_FONT_DEFAULT &GUI_Font13_1
+     58          #endif
+     59          
+     60          /* Support for 3D effects */
+     61          #ifndef   BUTTON_USE_3D
+     62            #define BUTTON_USE_3D 1
+     63          #endif
+     64          
+     65          #ifndef   BUTTON_3D_MOVE_X
+     66            #define BUTTON_3D_MOVE_X 1
+     67          #endif
+     68          #ifndef   BUTTON_3D_MOVE_Y
+     69            #define BUTTON_3D_MOVE_Y 1
+     70          #endif
+     71          
+     72          /* Define colors */
+     73          #ifndef   BUTTON_BKCOLOR0_DEFAULT
+     74            #define BUTTON_BKCOLOR0_DEFAULT   0xAAAAAA
+     75          #endif
+     76          
+     77          #ifndef   BUTTON_BKCOLOR1_DEFAULT
+     78            #define BUTTON_BKCOLOR1_DEFAULT   GUI_WHITE
+     79          #endif
+     80          
+     81          #ifndef   BUTTON_BKCOLOR2_DEFAULT
+     82            #define BUTTON_BKCOLOR2_DEFAULT   GUI_LIGHTGRAY
+     83          #endif
+     84          
+     85          #ifndef   BUTTON_TEXTCOLOR0_DEFAULT
+     86            #define BUTTON_TEXTCOLOR0_DEFAULT GUI_BLACK
+     87          #endif
+     88          
+     89          #ifndef   BUTTON_TEXTCOLOR1_DEFAULT
+     90            #define BUTTON_TEXTCOLOR1_DEFAULT GUI_BLACK
+     91          #endif
+     92          
+     93          #ifndef   BUTTON_TEXTCOLOR2_DEFAULT
+     94            #define BUTTON_TEXTCOLOR2_DEFAULT GUI_DARKGRAY
+     95          #endif
+     96          
+     97          #ifndef   BUTTON_REACT_ON_LEVEL
+     98            #define BUTTON_REACT_ON_LEVEL 0
+     99          #endif
+    100          
+    101          #ifndef   BUTTON_ALIGN_DEFAULT
+    102            #define BUTTON_ALIGN_DEFAULT GUI_TA_HCENTER | GUI_TA_VCENTER
+    103          #endif
+    104          
+    105          //extern unsigned char bmp_public_buf[16 * 1024];
+    106          
+    107          /*********************************************************************
+    108          *
+    109          *       Static data
+    110          *
+    111          **********************************************************************
+    112          */
+
+   \                                 In section .data, align 4
+    113          BUTTON_PROPS BUTTON__DefaultProps = {
+   \                     BUTTON__DefaultProps:
+   \   00000000   0x00AAAAAA         DC32 11184810, 16777215, 13882323, 0, 0, 4210752, GUI_Font13_1
+   \              0x00FFFFFF   
+   \              0x00D3D3D3   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00404040   
+   \              0x........   
+   \   0000001C   0x000E             DC16 14
+   \   0000001E   0x00 0x00          DC8 0, 0
+    114            BUTTON_BKCOLOR0_DEFAULT,
+    115            BUTTON_BKCOLOR1_DEFAULT,
+    116            BUTTON_BKCOLOR2_DEFAULT,
+    117            BUTTON_TEXTCOLOR0_DEFAULT,
+    118            BUTTON_TEXTCOLOR1_DEFAULT,
+    119            BUTTON_TEXTCOLOR2_DEFAULT,
+    120            BUTTON_FONT_DEFAULT,
+    121            BUTTON_ALIGN_DEFAULT
+    122          };
+    123          
+    124          /*********************************************************************
+    125          *
+    126          *       Static routines
+    127          *
+    128          **********************************************************************
+    129          */
+    130          /*********************************************************************
+    131          *
+    132          *       _Paint
+    133          */
+    134          
+
+   \                                 In section .text, align 2, keep-with-next
+    135          static void _Paint(BUTTON_Obj* pObj, BUTTON_Handle hObj) {
+   \                     _Paint: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0xB086             SUB      SP,SP,#+24
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x4608             MOV      R0,R1
+    136          	uint8_t p=0;
+   \   0000000A   0x2500             MOVS     R5,#+0
+    137          
+    138            const char* s = NULL;
+   \   0000000C   0x462E             MOV      R6,R5
+    139            unsigned int Index;
+    140            int State, PressedState, ColorIndex;
+    141            GUI_RECT rClient, rInside;
+    142            State = pObj->Widget.State;
+    143            PressedState = (State & BUTTON_STATE_PRESSED) ? 1 : 0;
+   \   0000000E   0x8CE1             LDRH     R1,[R4, #+38]
+   \   00000010   0x0A09             LSRS     R1,R1,#+8
+   \   00000012   0xF001 0x0701      AND      R7,R1,#0x1
+    144            ColorIndex   = (WM__IsEnabled(hObj)) ? PressedState : 2;
+   \   00000016   0x.... 0x....      BL       WM__IsEnabled
+   \   0000001A   0x2800             CMP      R0,#+0
+   \   0000001C   0xD001             BEQ.N    ??_Paint_0
+   \   0000001E   0x46B8             MOV      R8,R7
+   \   00000020   0xE001             B.N      ??_Paint_1
+   \                     ??_Paint_0: (+1)
+   \   00000022   0xF04F 0x0802      MOV      R8,#+2
+    145            GUI_SetFont(pObj->Props.pFont);
+   \                     ??_Paint_1: (+1)
+   \   00000026   0x6C20             LDR      R0,[R4, #+64]
+   \   00000028   0x.... 0x....      BL       GUI_SetFont
+    146            GUI_DEBUG_LOG("BUTTON: Paint(..)\n");
+    147            if (pObj->hpText) {
+   \   0000002C   0xF9B4 0x0048      LDRSH    R0,[R4, #+72]
+   \   00000030   0x2800             CMP      R0,#+0
+   \   00000032   0xD002             BEQ.N    ??_Paint_2
+    148              s = (const char*) GUI_ALLOC_h2p(pObj->hpText);
+   \   00000034   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   00000038   0x4606             MOV      R6,R0
+    149            }
+    150            GUI_GetClientRect(&rClient);
+   \                     ??_Paint_2: (+1)
+   \   0000003A   0xA800             ADD      R0,SP,#+0
+   \   0000003C   0x.... 0x....      BL       GUI_GetClientRect
+    151          
+    152            /* Start drawing */
+    153            rInside = rClient;
+   \   00000040   0xE9DD 0x0100      LDRD     R0,R1,[SP, #+0]
+   \   00000044   0xE9CD 0x0102      STRD     R0,R1,[SP, #+8]
+    154          /* Draw the 3D effect (if configured) */
+    155          	if(gCfgItems.button_3d_effect_flag == 1)
+   \   00000048   0x.... 0x....      LDR.W    R9,??DataTable1
+   \   0000004C   0xF899 0x00CC      LDRB     R0,[R9, #+204]
+   \   00000050   0x2801             CMP      R0,#+1
+   \   00000052   0xD119             BNE.N    ??_Paint_3
+    156          	{
+    157          	  #if BUTTON_USE_3D
+    158          	  {
+    159          	    int EffectSize;
+    160          	    if ((PressedState) == 0) {
+   \   00000054   0x2F00             CMP      R7,#+0
+   \   00000056   0xD105             BNE.N    ??_Paint_4
+    161          	      pObj->Widget.pEffect->pfDrawUp();  /* _WIDGET_EFFECT_3D_DrawUp(); */
+   \   00000058   0x6A20             LDR      R0,[R4, #+32]
+   \   0000005A   0x6800             LDR      R0,[R0, #+0]
+   \   0000005C   0x4780             BLX      R0
+    162          	      EffectSize = pObj->Widget.pEffect->EffectSize;
+   \   0000005E   0x6A20             LDR      R0,[R4, #+32]
+   \   00000060   0x6942             LDR      R2,[R0, #+20]
+   \   00000062   0xE00D             B.N      ??_Paint_5
+    163          	    } else {
+    164          	      LCD_SetColor(0x000000);
+   \                     ??_Paint_4: (+1)
+   \   00000064   0x4628             MOV      R0,R5
+   \   00000066   0x.... 0x....      BL       LCD_SetColor
+    165          	      GUI_DrawRect(rClient.y0, rClient.x0, rClient.x1, rClient.y1);
+   \   0000006A   0xF9BD 0x3006      LDRSH    R3,[SP, #+6]
+   \   0000006E   0xF9BD 0x2004      LDRSH    R2,[SP, #+4]
+   \   00000072   0xF9BD 0x1000      LDRSH    R1,[SP, #+0]
+   \   00000076   0xF9BD 0x0002      LDRSH    R0,[SP, #+2]
+   \   0000007A   0x.... 0x....      BL       GUI_DrawRect
+    166          	      EffectSize = 1;
+   \   0000007E   0x2201             MOVS     R2,#+1
+    167          	    }
+    168          	    GUI__ReduceRect(&rInside, &rInside, EffectSize); 
+   \                     ??_Paint_5: (+1)
+   \   00000080   0xA902             ADD      R1,SP,#+8
+   \   00000082   0xA802             ADD      R0,SP,#+8
+   \   00000084   0x.... 0x....      BL       GUI__ReduceRect
+    169          	  }
+    170          	  #endif
+    171          	}
+    172            /* Draw background */
+    173            LCD_SetBkColor (pObj->Props.aBkColor[ColorIndex]);
+   \                     ??_Paint_3: (+1)
+   \   00000088   0xEB04 0x0A88      ADD      R10,R4,R8, LSL #+2
+   \   0000008C   0xF8DA 0x0028      LDR      R0,[R10, #+40]
+   \   00000090   0x.... 0x....      BL       LCD_SetBkColor
+    174            LCD_SetColor   (pObj->Props.aTextColor[ColorIndex]);
+   \   00000094   0xF8DA 0x0034      LDR      R0,[R10, #+52]
+   \   00000098   0x.... 0x....      BL       LCD_SetColor
+    175            WM_SetUserClipRect(&rInside);
+   \   0000009C   0xA802             ADD      R0,SP,#+8
+   \   0000009E   0x.... 0x....      BL       WM_SetUserClipRect
+    176          	if(pObj->clear_flag)
+   \   000000A2   0xF994 0x0058      LDRSB    R0,[R4, #+88]
+   \   000000A6   0x2800             CMP      R0,#+0
+   \   000000A8   0xD001             BEQ.N    ??_Paint_6
+    177            	GUI_Clear();
+   \   000000AA   0x.... 0x....      BL       GUI_Clear
+    178            /* Draw bitmap.
+    179               If we have only one, we will use it.
+    180               If we have to we will use the second one (Index 1) for the pressed state
+    181            */
+    182            if (ColorIndex < 2) {
+   \                     ??_Paint_6: (+1)
+   \   000000AE   0xF1B8 0x0F02      CMP      R8,#+2
+   \   000000B2   0xDA0F             BGE.N    ??_Paint_7
+    183              Index = (pObj->ahDrawObj[BUTTON_BI_PRESSED] && PressedState) ? BUTTON_BI_PRESSED : BUTTON_BI_UNPRESSED;
+   \   000000B4   0xF9B4 0x004C      LDRSH    R0,[R4, #+76]
+   \   000000B8   0x2800             CMP      R0,#+0
+   \   000000BA   0xD009             BEQ.N    ??_Paint_8
+   \   000000BC   0x46B8             MOV      R8,R7
+   \   000000BE   0xF1B8 0x0801      SUBS     R8,R8,#+1
+   \   000000C2   0xEB68 0x0808      SBC      R8,R8,R8
+   \   000000C6   0xEA6F 0x0808      MVN      R8,R8
+   \   000000CA   0xEA4F 0x78D8      LSR      R8,R8,#+31
+   \   000000CE   0xE009             B.N      ??_Paint_9
+   \                     ??_Paint_8: (+1)
+   \   000000D0   0x46A8             MOV      R8,R5
+   \   000000D2   0xE007             B.N      ??_Paint_9
+    184            } else {
+    185              Index = pObj->ahDrawObj[BUTTON_BI_DISABLED] ? BUTTON_BI_DISABLED : BUTTON_BI_UNPRESSED;
+   \                     ??_Paint_7: (+1)
+   \   000000D4   0xF9B4 0x004E      LDRSH    R0,[R4, #+78]
+   \   000000D8   0x2800             CMP      R0,#+0
+   \   000000DA   0xD002             BEQ.N    ??_Paint_10
+   \   000000DC   0xF04F 0x0802      MOV      R8,#+2
+   \   000000E0   0xE000             B.N      ??_Paint_9
+   \                     ??_Paint_10: (+1)
+   \   000000E2   0x46A8             MOV      R8,R5
+    186            }
+    187          #if defined(MKS_ROBIN2)
+    188          	if(disp_in_file_dir == 1)
+    189          	{
+    190          		GUI_UC_SetEncodeNone();
+    191          	}
+    192          #endif
+    193            if(pObj->BmpFileName != 0)
+   \                     ??_Paint_9: (+1)
+   \   000000E4   0x6D20             LDR      R0,[R4, #+80]
+   \   000000E6   0x2800             CMP      R0,#+0
+   \   000000E8   0xD01F             BEQ.N    ??_Paint_11
+   \   000000EA   0xE000             B.N      ??_Paint_12
+    194            {
+    195            	#if 0
+    196            	Pic_Read(pObj->BmpFileName,bmp_public_buf);
+    197          		GUI_DRAW__Draw(pObj->ahDrawObj[Index], 0, 0);
+    198          		#else
+    199              for(p=0;p<4;p++)
+   \                     ??_Paint_13: (+1)
+   \   000000EC   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??_Paint_12: (+1)
+   \   000000EE   0xB2ED             UXTB     R5,R5
+   \   000000F0   0x46AA             MOV      R10,R5
+   \   000000F2   0xF1BA 0x0F04      CMP      R10,#+4
+   \   000000F6   0xDA18             BGE.N    ??_Paint_11
+    200              {
+    201            		Pic_Read(pObj->BmpFileName,bmp_public_buf,p,4);
+                   		^
+Warning[Pe223]: function "Pic_Read" declared implicitly
+   \   000000F8   0x2304             MOVS     R3,#+4
+   \   000000FA   0x4652             MOV      R2,R10
+   \   000000FC   0x....             LDR.N    R1,??DataTable1_1
+   \   000000FE   0x6D20             LDR      R0,[R4, #+80]
+   \   00000100   0x.... 0x....      BL       Pic_Read
+    202          		GUI_DRAW__Draw(pObj->ahDrawObj[Index], 0, p*((rClient.y1+1)>>2));
+   \   00000104   0xF9BD 0x0006      LDRSH    R0,[SP, #+6]
+   \   00000108   0x1C40             ADDS     R0,R0,#+1
+   \   0000010A   0x1080             ASRS     R0,R0,#+2
+   \   0000010C   0xFB00 0xF20A      MUL      R2,R0,R10
+   \   00000110   0x2100             MOVS     R1,#+0
+   \   00000112   0xEB04 0x0048      ADD      R0,R4,R8, LSL #+1
+   \   00000116   0xF9B0 0x004A      LDRSH    R0,[R0, #+74]
+   \   0000011A   0x.... 0x....      BL       GUI_DRAW__Draw
+    203          		if(little_image_flag == 1)
+   \   0000011E   0x....             LDR.N    R0,??DataTable1_2
+   \   00000120   0x7801             LDRB     R1,[R0, #+0]
+   \   00000122   0x2901             CMP      R1,#+1
+   \   00000124   0xD1E2             BNE.N    ??_Paint_13
+    204          		{
+    205          		        little_image_flag = 0;
+   \   00000126   0x2100             MOVS     R1,#+0
+   \   00000128   0x7001             STRB     R1,[R0, #+0]
+    206          			break;
+    207          		}
+    208              }		
+    209          		#endif
+    210          	}
+    211          #if defined(TFT35)
+    212          	if(pObj->gcode_path != 0)
+   \                     ??_Paint_11: (+1)
+   \   0000012A   0x6D60             LDR      R0,[R4, #+84]
+   \   0000012C   0x2800             CMP      R0,#+0
+   \   0000012E   0xD017             BEQ.N    ??_Paint_14
+    213          	{
+    214          		//Pic_Read(pObj->BmpFileName,bmp_public_buf);
+    215          		for(p=0;p<4;p++)
+   \   00000130   0x2500             MOVS     R5,#+0
+   \   00000132   0xE010             B.N      ??_Paint_15
+    216          		{
+    217          			drawicon_preview(pObj->gcode_path,100,25,p);
+   \                     ??_Paint_16: (+1)
+   \   00000134   0x462B             MOV      R3,R5
+   \   00000136   0x2219             MOVS     R2,#+25
+   \   00000138   0x2164             MOVS     R1,#+100
+   \   0000013A   0x6D60             LDR      R0,[R4, #+84]
+   \   0000013C   0x.... 0x....      BL       drawicon_preview
+    218          			GUI_DRAW__Draw(pObj->ahDrawObj[Index], 0, p*25);
+   \   00000140   0x2019             MOVS     R0,#+25
+   \   00000142   0xFB00 0xF20A      MUL      R2,R0,R10
+   \   00000146   0x2100             MOVS     R1,#+0
+   \   00000148   0xEB04 0x0048      ADD      R0,R4,R8, LSL #+1
+   \   0000014C   0xF9B0 0x004A      LDRSH    R0,[R0, #+74]
+   \   00000150   0x.... 0x....      BL       GUI_DRAW__Draw
+    219          		}
+   \   00000154   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??_Paint_15: (+1)
+   \   00000156   0xB2ED             UXTB     R5,R5
+   \   00000158   0x46AA             MOV      R10,R5
+   \   0000015A   0xF1BA 0x0F04      CMP      R10,#+4
+   \   0000015E   0xDBE9             BLT.N    ??_Paint_16
+    220          	}
+    221          #endif
+    222            	
+    223           
+    224          /* Draw the actual button (background and text) */  
+    225            {
+    226              GUI_RECT r;
+    227              r = rInside;
+   \                     ??_Paint_14: (+1)
+   \   00000160   0xE9DD 0x0102      LDRD     R0,R1,[SP, #+8]
+   \   00000164   0xE9CD 0x0104      STRD     R0,R1,[SP, #+16]
+    228          	if(gCfgItems.button_3d_effect_flag == 1)
+   \   00000168   0xF899 0x00CC      LDRB     R0,[R9, #+204]
+   \   0000016C   0x2801             CMP      R0,#+1
+   \   0000016E   0xD106             BNE.N    ??_Paint_17
+    229          	{
+    230          	    #if BUTTON_USE_3D
+    231          	      if (PressedState) {
+   \   00000170   0x2F00             CMP      R7,#+0
+   \   00000172   0xD004             BEQ.N    ??_Paint_17
+    232          	        GUI_MoveRect(&r, BUTTON_3D_MOVE_X,BUTTON_3D_MOVE_Y);
+   \   00000174   0x2201             MOVS     R2,#+1
+   \   00000176   0x4611             MOV      R1,R2
+   \   00000178   0xA804             ADD      R0,SP,#+16
+   \   0000017A   0x.... 0x....      BL       GUI_MoveRect
+    233          	      }
+    234          	    #endif
+    235          	}
+    236              GUI_SetTextMode(GUI_TM_TRANS);
+   \                     ??_Paint_17: (+1)
+   \   0000017E   0x2002             MOVS     R0,#+2
+   \   00000180   0x.... 0x....      BL       GUI_SetTextMode
+    237              GUI_DispStringInRect(s, &r, pObj->Props.Align);
+   \   00000184   0xF9B4 0x2044      LDRSH    R2,[R4, #+68]
+   \   00000188   0xA904             ADD      R1,SP,#+16
+   \   0000018A   0x4630             MOV      R0,R6
+   \   0000018C   0x.... 0x....      BL       GUI_DispStringInRect
+    238            }
+    239            /* Draw focus */
+    240            if (State & BUTTON_STATE_FOCUS) {
+    241           //   LCD_SetColor(GUI_BLACK);
+    242          //    GUI_DrawFocusRect(&rClient, 2);
+    243            }
+    244            WM_SetUserClipRect(NULL);
+   \   00000190   0x2000             MOVS     R0,#+0
+   \   00000192   0x.... 0x....      BL       WM_SetUserClipRect
+    245          #if defined(MKS_ROBIN2)	
+    246          	if(disp_in_file_dir == 1)
+    247          	{
+    248          		GUI_UC_SetEncodeUTF8();
+    249          	}
+    250          #endif
+    251          }
+   \   00000196   0xB006             ADD      SP,SP,#+24
+   \   00000198   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+    252          
+    253          /*********************************************************************
+    254          *
+    255          *       _Delete
+    256          *
+    257          * Delete attached objects (if any)
+    258          */
+
+   \                                 In section .text, align 2, keep-with-next
+    259          static void _Delete(BUTTON_Obj* pObj) {
+   \                     _Delete: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    260            GUI_ALLOC_FreePtr(&pObj->hpText);
+   \   00000004   0xF104 0x0048      ADD      R0,R4,#+72
+   \   00000008   0x.... 0x....      BL       GUI_ALLOC_FreePtr
+    261            GUI_ALLOC_FreePtr(&pObj->ahDrawObj[0]);
+   \   0000000C   0xF104 0x004A      ADD      R0,R4,#+74
+   \   00000010   0x.... 0x....      BL       GUI_ALLOC_FreePtr
+    262            GUI_ALLOC_FreePtr(&pObj->ahDrawObj[1]);
+   \   00000014   0xF104 0x004C      ADD      R0,R4,#+76
+   \   00000018   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001C   0x.... 0x....      B.W      GUI_ALLOC_FreePtr
+    263          }
+    264          
+    265          /*********************************************************************
+    266          *
+    267          *       _ButtonPressed
+    268          */
+
+   \                                 In section .text, align 2, keep-with-next
+    269          static void _ButtonPressed(BUTTON_Handle hObj, BUTTON_Obj* pObj) {
+   \                     _ButtonPressed: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    270            WIDGET_OrState(hObj, BUTTON_STATE_PRESSED);
+   \   00000006   0xF44F 0x7180      MOV      R1,#+256
+   \   0000000A   0x.... 0x....      BL       WIDGET_OrState
+    271            if (pObj->Widget.Win.Status & WM_SF_ISVIS) {
+   \   0000000E   0x7F28             LDRB     R0,[R5, #+28]
+   \   00000010   0x0780             LSLS     R0,R0,#+30
+   \   00000012   0xD505             BPL.N    ??_ButtonPressed_0
+    272              WM_NotifyParent(hObj, WM_NOTIFICATION_CLICKED);
+   \   00000014   0x2101             MOVS     R1,#+1
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \   0000001C   0x.... 0x....      B.W      WM_NotifyParent
+    273            }
+    274          }
+   \                     ??_ButtonPressed_0: (+1)
+   \   00000020   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    275          
+    276          /*********************************************************************
+    277          *
+    278          *       _ButtonReleased
+    279          */
+
+   \                                 In section .text, align 2, keep-with-next
+    280          static void _ButtonReleased(BUTTON_Handle hObj, BUTTON_Obj* pObj, int Notification) {
+   \                     _ButtonReleased: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    281            WIDGET_AndState(hObj, BUTTON_STATE_PRESSED);
+   \   00000008   0xF44F 0x7180      MOV      R1,#+256
+   \   0000000C   0x.... 0x....      BL       WIDGET_AndState
+    282            if (pObj->Widget.Win.Status & WM_SF_ISVIS) {
+   \   00000010   0x7F28             LDRB     R0,[R5, #+28]
+   \   00000012   0x0780             LSLS     R0,R0,#+30
+   \   00000014   0xD503             BPL.N    ??_ButtonReleased_0
+    283              WM_NotifyParent(hObj, Notification);
+   \   00000016   0x4631             MOV      R1,R6
+   \   00000018   0x4620             MOV      R0,R4
+   \   0000001A   0x.... 0x....      BL       WM_NotifyParent
+    284            }
+    285            if (Notification == WM_NOTIFICATION_RELEASED) {
+   \                     ??_ButtonReleased_0: (+1)
+   \   0000001E   0x2E02             CMP      R6,#+2
+   \   00000020   0xD105             BNE.N    ??_ButtonReleased_1
+    286              GUI_DEBUG_LOG("BUTTON: Hit\n");
+    287              GUI_StoreKey(pObj->Widget.Id);
+   \   00000022   0xF9B5 0x0024      LDRSH    R0,[R5, #+36]
+   \   00000026   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   0000002A   0x.... 0x....      B.W      GUI_StoreKey
+    288            }
+    289          }
+   \                     ??_ButtonReleased_1: (+1)
+   \   0000002E   0xBD70             POP      {R4-R6,PC}       ;; return
+    290          
+    291          /*********************************************************************
+    292          *
+    293          *       _OnTouch
+    294          */
+
+   \                                 In section .text, align 2, keep-with-next
+    295          static void _OnTouch(BUTTON_Handle hObj, BUTTON_Obj* pObj, WM_MESSAGE*pMsg) {
+    296            const GUI_PID_STATE* pState = (const GUI_PID_STATE*)pMsg->Data.p;
+    297          #if BUTTON_REACT_ON_LEVEL
+    298            if (!pMsg->Data.p) {  /* Mouse moved out */
+    299              _ButtonReleased(hObj, pObj, WM_NOTIFICATION_MOVED_OUT);
+    300            }
+    301          #else
+    302            if (pMsg->Data.p) {  /* Something happened in our area (pressed or released) */
+   \                     _OnTouch: (+1)
+   \   00000000   0x6892             LDR      R2,[R2, #+8]
+   \   00000002   0x2A00             CMP      R2,#+0
+   \   00000004   0xD00A             BEQ.N    ??_OnTouch_0
+    303              if (pState->Pressed) {
+   \   00000006   0x8CCB             LDRH     R3,[R1, #+38]
+   \   00000008   0x7A12             LDRB     R2,[R2, #+8]
+   \   0000000A   0x2A00             CMP      R2,#+0
+   \   0000000C   0xD002             BEQ.N    ??_OnTouch_1
+    304                if ((pObj->Widget.State & BUTTON_STATE_PRESSED) == 0){   
+   \   0000000E   0x05DA             LSLS     R2,R3,#+23
+   \   00000010   0xD406             BMI.N    ??_OnTouch_2
+    305                 _ButtonPressed(hObj, pObj);
+   \   00000012   0x....             B.N      _ButtonPressed
+    306          			 //btn_beeper(50);
+    307                }
+    308              } else {
+    309                /* React only if button was pressed before ... avoid problems with moving / hiding windows above (such as dropdown) */
+    310                if (pObj->Widget.State & BUTTON_STATE_PRESSED) {   
+   \                     ??_OnTouch_1: (+1)
+   \   00000014   0x05DA             LSLS     R2,R3,#+23
+   \   00000016   0xD503             BPL.N    ??_OnTouch_2
+    311                  _ButtonReleased(hObj, pObj, WM_NOTIFICATION_RELEASED);
+   \   00000018   0x2202             MOVS     R2,#+2
+   \   0000001A   0x....             B.N      _ButtonReleased
+    312                }
+    313              }
+    314            } else {
+    315              _ButtonReleased(hObj, pObj, WM_NOTIFICATION_MOVED_OUT);
+   \                     ??_OnTouch_0: (+1)
+   \   0000001C   0x2203             MOVS     R2,#+3
+   \   0000001E   0x....             B.N      _ButtonReleased
+    316            }
+    317          
+    318          #endif
+    319          }
+   \                     ??_OnTouch_2: (+1)
+   \   00000020   0x4770             BX       LR               ;; return
+    320          
+    321          /*********************************************************************
+    322          *
+    323          *       _OnPidStateChange
+    324          */
+    325          #if BUTTON_REACT_ON_LEVEL
+    326          static void _OnPidStateChange(BUTTON_Handle hObj, BUTTON_Obj * pObj, WM_MESSAGE * pMsg) {
+    327            const WM_PID_STATE_CHANGED_INFO * pState = (const WM_PID_STATE_CHANGED_INFO *)pMsg->Data.p;
+    328            if ((pState->StatePrev == 0) && (pState->State == 1)) {
+    329              if ((pObj->Widget.State & BUTTON_STATE_PRESSED) == 0){   
+    330                _ButtonPressed(hObj, pObj);
+    331              }
+    332            } else if ((pState->StatePrev == 1) && (pState->State == 0)) {
+    333              if (pObj->Widget.State & BUTTON_STATE_PRESSED) {   
+    334                _ButtonReleased(hObj, pObj, WM_NOTIFICATION_RELEASED);
+    335              }
+    336            }
+    337          }
+    338          #endif
+    339          
+    340          /*********************************************************************
+    341          *
+    342          *       BUTTON_Callback
+    343          */
+
+   \                                 In section .text, align 2, keep-with-next
+    344          void BUTTON_Callback(WM_MESSAGE *pMsg) {
+   \                     BUTTON_Callback: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    345            BUTTON_Handle hObj = pMsg->hWin;
+   \   00000004   0xF9B4 0x5004      LDRSH    R5,[R4, #+4]
+    346            BUTTON_Obj* pObj = BUTTON_H2P(hObj);
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   0000000E   0x4606             MOV      R6,R0
+    347            /* Let widget handle the standard messages */
+    348            if (WIDGET_HandleActive(hObj, pMsg) == 0) {
+   \   00000010   0x4621             MOV      R1,R4
+   \   00000012   0x4628             MOV      R0,R5
+   \   00000014   0x.... 0x....      BL       WIDGET_HandleActive
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD01A             BEQ.N    ??BUTTON_Callback_0
+    349              return;
+    350            }
+    351            switch (pMsg->MsgId) {
+   \   0000001C   0x6820             LDR      R0,[R4, #+0]
+   \   0000001E   0x280B             CMP      R0,#+11
+   \   00000020   0xD00F             BEQ.N    ??BUTTON_Callback_1
+   \   00000022   0x280C             CMP      R0,#+12
+   \   00000024   0xD002             BEQ.N    ??BUTTON_Callback_2
+   \   00000026   0x280F             CMP      R0,#+15
+   \   00000028   0xD006             BEQ.N    ??BUTTON_Callback_3
+   \   0000002A   0xE00D             B.N      ??BUTTON_Callback_4
+    352          #if BUTTON_REACT_ON_LEVEL
+    353            case WM_PID_STATE_CHANGED:
+    354              _OnPidStateChange(hObj, pObj, pMsg);
+    355              return;      /* Message handled. Do not call WM_DefaultProc, because the window may have been destroyed */
+    356          #endif
+    357            case WM_TOUCH:
+    358              _OnTouch(hObj, pObj, pMsg);
+   \                     ??BUTTON_Callback_2: (+1)
+   \   0000002C   0x4622             MOV      R2,R4
+   \   0000002E   0x4631             MOV      R1,R6
+   \   00000030   0x4628             MOV      R0,R5
+   \   00000032   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000036   0x....             B.N      _OnTouch
+    359              return;      /* Message handled. Do not call WM_DefaultProc, because the window may have been destroyed */
+    360            case WM_PAINT:
+    361              GUI_DEBUG_LOG("BUTTON: _BUTTON_Callback(WM_PAINT)\n");
+    362              _Paint(pObj, hObj);
+   \                     ??BUTTON_Callback_3: (+1)
+   \   00000038   0x4629             MOV      R1,R5
+   \   0000003A   0x4630             MOV      R0,R6
+   \   0000003C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000040   0x....             B.N      _Paint
+    363              return;
+    364            case WM_DELETE:
+    365              GUI_DEBUG_LOG("BUTTON: _BUTTON_Callback(WM_DELETE)\n");
+    366              _Delete(pObj);
+   \                     ??BUTTON_Callback_1: (+1)
+   \   00000042   0x4630             MOV      R0,R6
+   \   00000044   0x.... 0x....      BL       _Delete
+    367              break;       /* No return here ... WM_DefaultProc needs to be called */
+    368            #if 0     /* TBD: Button should react to space & Enter */
+    369            case WM_KEY:
+    370              {
+    371                int PressedCnt = ((WM_KEY_INFO*)(pMsg->Data.p))->PressedCnt;
+    372                int Key = ((WM_KEY_INFO*)(pMsg->Data.p))->Key;
+    373                if (PressedCnt > 0) {   /* Key pressed? */
+    374                  switch (Key) {
+    375                  case ' ':
+    376                    _ButtonPressed(hObj, pObj);
+    377                    return;
+    378                  }
+    379                } else {
+    380                  switch (Key) {
+    381                  case ' ':
+    382                    _ButtonReleased(hObj, pObj, WM_NOTIFICATION_RELEASED);
+    383                    return;
+    384                  }
+    385                }
+    386              }
+    387              break;
+    388            #endif
+    389            }
+    390            WM_DefaultProc(pMsg);
+   \                     ??BUTTON_Callback_4: (+1)
+   \   00000048   0x4620             MOV      R0,R4
+   \   0000004A   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   0000004E   0x.... 0x....      B.W      WM_DefaultProc
+   \                     ??BUTTON_Callback_0: (+1)
+   \   00000052   0xBD70             POP      {R4-R6,PC}       ;; return
+    391          }
+    392          
+    393          /*********************************************************************
+    394          *
+    395          *       Exported routines:  Create
+    396          *
+    397          **********************************************************************
+    398          */
+    399          /*********************************************************************
+    400          *
+    401          *       BUTTON_CreateEx
+    402          */
+
+   \                                 In section .text, align 2, keep-with-next
+    403          BUTTON_Handle BUTTON_CreateEx(int x0, int y0, int xsize, int ysize, WM_HWIN hParent, int WinFlags, int ExFlags, int Id) {
+   \                     BUTTON_CreateEx: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB085             SUB      SP,SP,#+20
+    404            BUTTON_Handle hObj;
+    405            GUI_USE_PARA(ExFlags);
+    406            /* Create the window */
+    407            WM_LOCK();
+    408            hObj = WM_CreateWindowAsChild(x0, y0, xsize, ysize, hParent, WinFlags, BUTTON_Callback,
+    409                                          sizeof(BUTTON_Obj) - sizeof(WM_Obj));
+   \   00000004   0x243C             MOVS     R4,#+60
+   \   00000006   0x9403             STR      R4,[SP, #+12]
+   \   00000008   0x....             LDR.N    R4,??DataTable1_3
+   \   0000000A   0x9402             STR      R4,[SP, #+8]
+   \   0000000C   0x9C09             LDR      R4,[SP, #+36]
+   \   0000000E   0xB2A4             UXTH     R4,R4
+   \   00000010   0x9401             STR      R4,[SP, #+4]
+   \   00000012   0xF9BD 0x4020      LDRSH    R4,[SP, #+32]
+   \   00000016   0x9400             STR      R4,[SP, #+0]
+   \   00000018   0x.... 0x....      BL       WM_CreateWindowAsChild
+   \   0000001C   0x0004             MOVS     R4,R0
+    410            if (hObj) {
+   \   0000001E   0xD00C             BEQ.N    ??BUTTON_CreateEx_0
+    411              BUTTON_Obj* pObj = BUTTON_H2P(hObj);
+   \   00000020   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   00000024   0x4605             MOV      R5,R0
+    412              /* init widget specific variables */
+    413              WIDGET__Init(&pObj->Widget, Id, WIDGET_STATE_FOCUSSABLE);
+   \   00000026   0x2210             MOVS     R2,#+16
+   \   00000028   0x990B             LDR      R1,[SP, #+44]
+   \   0000002A   0x.... 0x....      BL       WIDGET__Init
+    414              /* init member variables */
+    415              BUTTON_INIT_ID(pObj);
+    416              pObj->Props = BUTTON__DefaultProps;
+   \   0000002E   0xF105 0x0028      ADD      R0,R5,#+40
+   \   00000032   0x....             LDR.N    R1,??DataTable1_4
+   \   00000034   0x2220             MOVS     R2,#+32
+   \   00000036   0x.... 0x....      BL       __aeabi_memcpy4
+    417            } else {
+    418              GUI_DEBUG_ERROROUT_IF(hObj==0, "BUTTON_Create failed")
+    419            }
+    420            WM_UNLOCK();
+    421            return hObj;
+   \                     ??BUTTON_CreateEx_0: (+1)
+   \   0000003A   0x4620             MOV      R0,R4
+   \   0000003C   0xB005             ADD      SP,SP,#+20
+   \   0000003E   0xBD30             POP      {R4,R5,PC}       ;; return
+    422          }
+    423          
+    424          /*********************************************************************
+    425          *
+    426          *       Exported routines:  Various methods
+    427          *
+    428          **********************************************************************
+    429          */
+    430          
+    431          /*********************************************************************
+    432          *
+    433          *       BUTTON_SetText
+    434          */
+
+   \                                 In section .text, align 2, keep-with-next
+    435          void BUTTON_SetText(BUTTON_Handle hObj, const char* s) {
+   \                     BUTTON_SetText: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    436            if (hObj) {
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD00C             BEQ.N    ??BUTTON_SetText_0
+    437              BUTTON_Obj* pObj;
+    438              WM_LOCK();
+    439              pObj = BUTTON_H2P(hObj);
+   \   0000000A   0x.... 0x....      BL       GUI_ALLOC_h2p
+    440              if (GUI__SetText(&pObj->hpText, s)) {
+   \   0000000E   0x4629             MOV      R1,R5
+   \   00000010   0x3048             ADDS     R0,R0,#+72
+   \   00000012   0x.... 0x....      BL       GUI__SetText
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD004             BEQ.N    ??BUTTON_SetText_0
+    441                BUTTON_Invalidate(hObj);
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \   00000020   0x.... 0x....      B.W      WM_InvalidateWindow
+    442              }
+    443              WM_UNLOCK();
+    444            }
+    445          }
+   \                     ??BUTTON_SetText_0: (+1)
+   \   00000024   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    446          
+    447          /*********************************************************************
+    448          *
+    449          *       BUTTON_SetFont
+    450          */
+
+   \                                 In section .text, align 2, keep-with-next
+    451          void BUTTON_SetFont(BUTTON_Handle hObj, const GUI_FONT GUI_UNI_PTR * pfont) {
+   \                     BUTTON_SetFont: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    452            if (hObj) {
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD007             BEQ.N    ??BUTTON_SetFont_0
+    453              BUTTON_Obj* pObj;
+    454              WM_LOCK();
+    455              pObj = BUTTON_H2P(hObj);
+   \   0000000A   0x.... 0x....      BL       GUI_ALLOC_h2p
+    456              BUTTON_ASSERT_IS_VALID_PTR(pObj);
+    457              pObj->Props.pFont = pfont;
+   \   0000000E   0x6405             STR      R5,[R0, #+64]
+    458              BUTTON_Invalidate(hObj);
+   \   00000010   0x4620             MOV      R0,R4
+   \   00000012   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \   00000016   0x.... 0x....      B.W      WM_InvalidateWindow
+    459              WM_UNLOCK();
+    460            }
+    461          }
+   \                     ??BUTTON_SetFont_0: (+1)
+   \   0000001A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    462          
+    463          /*********************************************************************
+    464          *
+    465          *       BUTTON_SetBkColor
+    466          */
+
+   \                                 In section .text, align 2, keep-with-next
+    467          void BUTTON_SetBkColor(BUTTON_Handle hObj,unsigned int Index, GUI_COLOR Color) {
+   \                     BUTTON_SetBkColor: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    468            if (hObj && (Index <= 2)) {
+   \   00000008   0x2C00             CMP      R4,#+0
+   \   0000000A   0xD00B             BEQ.N    ??BUTTON_SetBkColor_0
+   \   0000000C   0x2D03             CMP      R5,#+3
+   \   0000000E   0xD209             BCS.N    ??BUTTON_SetBkColor_0
+    469              BUTTON_Obj* pObj;
+    470              WM_LOCK();
+    471              pObj = BUTTON_H2P(hObj);
+   \   00000010   0x.... 0x....      BL       GUI_ALLOC_h2p
+    472              BUTTON_ASSERT_IS_VALID_PTR(pObj);
+    473              pObj->Props.aBkColor[Index] = Color;
+   \   00000014   0xEB00 0x0085      ADD      R0,R0,R5, LSL #+2
+   \   00000018   0x6286             STR      R6,[R0, #+40]
+    474              BUTTON_Invalidate(hObj);
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000020   0x.... 0x....      B.W      WM_InvalidateWindow
+    475              WM_UNLOCK();
+    476            }
+    477          }
+   \                     ??BUTTON_SetBkColor_0: (+1)
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+    478          
+    479          /*********************************************************************
+    480          *
+    481          *       BUTTON_SetTextColor
+    482          */
+
+   \                                 In section .text, align 2, keep-with-next
+    483          void BUTTON_SetTextColor(BUTTON_Handle hObj,unsigned int Index, GUI_COLOR Color) {
+   \                     BUTTON_SetTextColor: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    484            if (hObj && (Index <= 2)) {
+   \   00000008   0x2C00             CMP      R4,#+0
+   \   0000000A   0xD00B             BEQ.N    ??BUTTON_SetTextColor_0
+   \   0000000C   0x2D03             CMP      R5,#+3
+   \   0000000E   0xD209             BCS.N    ??BUTTON_SetTextColor_0
+    485              BUTTON_Obj* pObj;
+    486              WM_LOCK();
+    487              pObj = BUTTON_H2P(hObj);
+   \   00000010   0x.... 0x....      BL       GUI_ALLOC_h2p
+    488              BUTTON_ASSERT_IS_VALID_PTR(pObj);
+    489              pObj->Props.aTextColor[Index] = Color;
+   \   00000014   0xEB00 0x0085      ADD      R0,R0,R5, LSL #+2
+   \   00000018   0x6346             STR      R6,[R0, #+52]
+    490              BUTTON_Invalidate(hObj);
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000020   0x.... 0x....      B.W      WM_InvalidateWindow
+    491              WM_UNLOCK();
+    492            }
+    493          }
+   \                     ??BUTTON_SetTextColor_0: (+1)
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+    494          
+    495          /*********************************************************************
+    496          *
+    497          *       BUTTON_SetState
+    498          */
+
+   \                                 In section .text, align 2, keep-with-next
+    499          void BUTTON_SetState(BUTTON_Handle hObj, int State) {
+    500            WIDGET_SetState(hObj, State);
+   \                     BUTTON_SetState: (+1)
+   \   00000000   0x.... 0x....      B.W      WIDGET_SetState
+    501          }
+    502          
+    503          /*********************************************************************
+    504          *
+    505          *       BUTTON_SetPressed
+    506          */
+
+   \                                 In section .text, align 2, keep-with-next
+    507          void BUTTON_SetPressed(BUTTON_Handle hObj, int State) {
+    508            if (State) {
+   \                     BUTTON_SetPressed: (+1)
+   \   00000000   0x2900             CMP      R1,#+0
+   \   00000002   0xF44F 0x7180      MOV      R1,#+256
+   \   00000006   0xD001             BEQ.N    ??BUTTON_SetPressed_0
+    509              WIDGET_OrState(hObj, BUTTON_STATE_PRESSED);
+   \   00000008   0x.... 0x....      B.W      WIDGET_OrState
+    510            } else {
+    511              WIDGET_AndState(hObj, BUTTON_STATE_PRESSED);
+   \                     ??BUTTON_SetPressed_0: (+1)
+   \   0000000C   0x.... 0x....      B.W      WIDGET_AndState
+    512            }
+    513          }
+    514          
+    515          /*********************************************************************
+    516          *
+    517          *       BUTTON_SetFocussable
+    518          */
+
+   \                                 In section .text, align 2, keep-with-next
+    519          void BUTTON_SetFocussable(BUTTON_Handle hObj, int State) {
+    520            if (State) {
+   \                     BUTTON_SetFocussable: (+1)
+   \   00000000   0x2900             CMP      R1,#+0
+   \   00000002   0xD002             BEQ.N    ??BUTTON_SetFocussable_0
+    521              WIDGET_OrState(hObj, WIDGET_STATE_FOCUSSABLE);
+   \   00000004   0x2110             MOVS     R1,#+16
+   \   00000006   0x.... 0x....      B.W      WIDGET_OrState
+    522            } else {
+    523              WIDGET_AndState(hObj, WIDGET_STATE_FOCUSSABLE);
+   \                     ??BUTTON_SetFocussable_0: (+1)
+   \   0000000A   0x2110             MOVS     R1,#+16
+   \   0000000C   0x.... 0x....      B.W      WIDGET_AndState
+    524            }
+    525          }
+    526          
+    527          
+    528          
+    529          /*
+    530          void BUTTON_SetBmpFileName(BUTTON_Handle hObj, char *pFile)
+    531          {
+    532          	if (hObj && pFile) {
+    533          	    BUTTON_Obj* pObj;
+    534          	    WM_LOCK();
+    535          	    pObj = BUTTON_H2P(hObj);
+    536          	    BUTTON_ASSERT_IS_VALID_PTR(pObj);
+    537          	    pObj->BmpFileName = pFile;
+    538          	    BUTTON_Invalidate(hObj);
+    539          	    WM_UNLOCK();
+    540          	}
+    541          }
+    542          */
+
+   \                                 In section .text, align 2, keep-with-next
+    543          void BUTTON_SetBmpFileName(BUTTON_Handle hObj,char *pFile, char flag)
+    544          {
+   \                     BUTTON_SetBmpFileName: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    545          	if (hObj) {
+   \   00000008   0x2C00             CMP      R4,#+0
+   \   0000000A   0xD009             BEQ.N    ??BUTTON_SetBmpFileName_0
+    546          	    BUTTON_Obj* pObj;
+    547          	    WM_LOCK();
+    548          	    pObj = BUTTON_H2P(hObj);
+   \   0000000C   0x.... 0x....      BL       GUI_ALLOC_h2p
+    549          	    BUTTON_ASSERT_IS_VALID_PTR(pObj);
+    550          			pObj->BmpFileName = pFile;
+   \   00000010   0x6505             STR      R5,[R0, #+80]
+    551          	    pObj->clear_flag= flag;
+   \   00000012   0xF880 0x6058      STRB     R6,[R0, #+88]
+    552          	    BUTTON_Invalidate(hObj);
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   0000001C   0x.... 0x....      B.W      WM_InvalidateWindow
+    553          	    WM_UNLOCK();
+    554          	}
+    555          }
+   \                     ??BUTTON_SetBmpFileName_0: (+1)
+   \   00000020   0xBD70             POP      {R4-R6,PC}       ;; return
+    556          
+
+   \                                 In section .text, align 2, keep-with-next
+    557          void BUTTON_SetBmpFileNamePath(BUTTON_Handle hObj,char *pFile,char *g_path, char flag)
+    558          {
+   \                     BUTTON_SetBmpFileNamePath: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+   \   00000008   0x461F             MOV      R7,R3
+    559          	if (hObj) {
+   \   0000000A   0x2C00             CMP      R4,#+0
+   \   0000000C   0xD00A             BEQ.N    ??BUTTON_SetBmpFileNamePath_0
+    560          	    BUTTON_Obj* pObj;
+    561          	    WM_LOCK();
+    562          	    pObj = BUTTON_H2P(hObj);
+   \   0000000E   0x.... 0x....      BL       GUI_ALLOC_h2p
+    563          	    BUTTON_ASSERT_IS_VALID_PTR(pObj);
+    564          			pObj->BmpFileName = pFile;
+   \   00000012   0x6505             STR      R5,[R0, #+80]
+    565          			pObj->gcode_path = g_path;
+   \   00000014   0x3050             ADDS     R0,R0,#+80
+   \   00000016   0x6046             STR      R6,[R0, #+4]
+    566          	    pObj->clear_flag= flag;
+   \   00000018   0x7207             STRB     R7,[R0, #+8]
+    567          	    BUTTON_Invalidate(hObj);
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \   00000020   0x.... 0x....      B.W      WM_InvalidateWindow
+    568          	    WM_UNLOCK();
+    569          	}
+    570          }
+   \                     ??BUTTON_SetBmpFileNamePath_0: (+1)
+   \   00000024   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x........         DC32     bmp_public_buf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0x........         DC32     little_image_flag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \   00000000   0x........         DC32     BUTTON_Callback
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \   00000000   0x........         DC32     BUTTON__DefaultProps
+    571          
+    572          
+    573          #else                            /* Avoid problems with empty object modules */
+    574            void BUTTON_C(void) {}
+    575          #endif /* GUI_WINSUPPORT */
+    576          
+    577          
+    578          
+    579          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   BUTTON_Callback
+        16   -> GUI_ALLOC_h2p
+        16   -> WIDGET_HandleActive
+         0   -> WM_DefaultProc
+        16   -> _Delete
+         0   -> _OnTouch
+         0   -> _Paint
+      32   BUTTON_CreateEx
+        32   -> GUI_ALLOC_h2p
+        32   -> WIDGET__Init
+        32   -> WM_CreateWindowAsChild
+        32   -> __aeabi_memcpy4
+      16   BUTTON_SetBkColor
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+      16   BUTTON_SetBmpFileName
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+      24   BUTTON_SetBmpFileNamePath
+        24   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+       0   BUTTON_SetFocussable
+         0   -> WIDGET_AndState
+         0   -> WIDGET_OrState
+      16   BUTTON_SetFont
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+       0   BUTTON_SetPressed
+         0   -> WIDGET_AndState
+         0   -> WIDGET_OrState
+       0   BUTTON_SetState
+         0   -> WIDGET_SetState
+      16   BUTTON_SetText
+        16   -> GUI_ALLOC_h2p
+        16   -> GUI__SetText
+         0   -> WM_InvalidateWindow
+      16   BUTTON_SetTextColor
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+      16   _ButtonPressed
+        16   -> WIDGET_OrState
+         0   -> WM_NotifyParent
+      16   _ButtonReleased
+         0   -> GUI_StoreKey
+        16   -> WIDGET_AndState
+        16   -> WM_NotifyParent
+       8   _Delete
+         0   -> GUI_ALLOC_FreePtr
+         8   -> GUI_ALLOC_FreePtr
+       0   _OnTouch
+         0   -> _ButtonPressed
+         0   -> _ButtonReleased
+      56   _Paint
+        56   -- Indirect call
+        56   -> GUI_ALLOC_h2p
+        56   -> GUI_Clear
+        56   -> GUI_DRAW__Draw
+        56   -> GUI_DispStringInRect
+        56   -> GUI_DrawRect
+        56   -> GUI_GetClientRect
+        56   -> GUI_MoveRect
+        56   -> GUI_SetFont
+        56   -> GUI_SetTextMode
+        56   -> GUI__ReduceRect
+        56   -> LCD_SetBkColor
+        56   -> LCD_SetColor
+        56   -> Pic_Read
+        56   -> WM_SetUserClipRect
+        56   -> WM__IsEnabled
+        56   -> drawicon_preview
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+      84  BUTTON_Callback
+      64  BUTTON_CreateEx
+      38  BUTTON_SetBkColor
+      34  BUTTON_SetBmpFileName
+      38  BUTTON_SetBmpFileNamePath
+      16  BUTTON_SetFocussable
+      28  BUTTON_SetFont
+      16  BUTTON_SetPressed
+       4  BUTTON_SetState
+      38  BUTTON_SetText
+      38  BUTTON_SetTextColor
+      32  BUTTON__DefaultProps
+      34  _ButtonPressed
+      48  _ButtonReleased
+      32  _Delete
+      34  _OnTouch
+     412  _Paint
+
+ 
+  32 bytes in section .data
+ 978 bytes in section .text
+ 
+ 978 bytes of CODE memory
+  32 bytes of DATA memory
+
+Errors: none
+Warnings: 3
