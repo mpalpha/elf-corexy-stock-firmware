@@ -1,0 +1,1 @@
+# elf-corexy-stock-firmware
